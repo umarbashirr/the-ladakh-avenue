@@ -7,18 +7,21 @@ import { MenuIcon } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="h-20 flex items-center justify-center w-full">
+    <header className="relative h-20 flex items-center justify-center w-full z-50">
       <BoxedContainer className="flex items-center justify-between">
         <div className="logo">
-          <Link href="/" className="flex flex-col items-center gap-0">
-            <span className="text-2xl font-bold">Snowpeak</span>
+          <Link
+            href="/"
+            className="flex flex-col items-center gap-0 uppercase text-white"
+          >
+            <span className="text-xl font-bold">Snowpeak</span>
             <span>Hotel</span>
           </Link>
         </div>
         <nav className="navbar flex items-center gap-x-2">
-          <Button>Book Now</Button>
+          <Button variant="secondary">Book Now</Button>
           <Button size="icon" variant="ghost">
-            <MenuIcon />
+            <MenuIcon className="text-white" />
           </Button>
         </nav>
       </BoxedContainer>

@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
         </BoxedContainer>
       </div>
-      <div className="bg-[#1F2127] text-white font-light flex items-center justify-center p-4 tracking-wider text-sm text-center">
+      <div className="bg-[#1F2127] text-white font-light flex items-center justify-center p-6 tracking-wider text-sm text-center">
         <p>
           &copy; 2024 by Snowpeak hotel. Powered by
           <Link href="/" target="_blank" className="ml-1">
