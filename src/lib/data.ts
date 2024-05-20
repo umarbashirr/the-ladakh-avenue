@@ -65,3 +65,24 @@ export const localAmenities = [
     direction: "rtl",
   },
 ];
+
+export const reviews = [
+  {
+    title: "A Truly Memorable Experience",
+    review:
+      "Staying at Snowpeak Hotel was a delight! The staff were incredibly hospitable, the rooms were spacious and comfortable, and the views were simply breathtaking. Can't wait to come back!",
+    name: "Sarah T.",
+  },
+  {
+    title: "Perfect Mountain Getaway",
+    review:
+      "We had an amazing time at Snowpeak Hotel. The location was stunning, the food was delicious, and the service was top-notch. Highly recommend for anyone looking for a luxurious retreat in Pahalgam.",
+    name: "John D.",
+  },
+  {
+    title: "Exceptional Hospitality",
+    review:
+      "The staff at Snowpeak Hotel went above and beyond to make our stay unforgettable. From arranging sightseeing tours to ensuring our every need was met, they truly exceeded our expectations. Will definitely be returning!",
+    name: "Emily M.",
+  },
+];

@@ -3,6 +3,7 @@ import AmenitiesSection from "../_components/home/amenities-section";
 import FacilitiesSection from "../_components/home/facilities-section";
 import HeroSection from "../_components/home/hero";
 import RoomsSuitesSection from "../_components/home/room-suites-section";
+import TestimonialSection from "../_components/home/testimonials-section";
 import VideoSection from "../_components/home/video-section";
 
 const Homepage = () => {
@@ -14,6 +15,7 @@ const Homepage = () => {
       <RoomsSuitesSection />
       <FacilitiesSection />
       <AmenitiesSection />
+      <TestimonialSection />
     </div>
   );
 };
