@@ -15,7 +15,7 @@ import { reviews } from "@/lib/data";
 
 const TestimonialSection = () => {
   return (
-    <div className="relative bg-[url('/images/pgm-lake.jpg')] bg-no-repeat bg-cover bg-center w-full h-[500px]">
+    <div className="relative bg-[url('/images/pgm-lake.jpg')] bg-no-repeat bg-cover bg-center w-full min-h-[500px] py-10">
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
       <BoxedContainer className="flex items-center justify-center">
         <div className="relative">
@@ -39,18 +39,22 @@ const TestimonialSection = () => {
                   <CarouselItem key={index}>
                     <div className="text-white">
                       <QuoteIcon size={24} className="mx-auto mb-6" />
-                      <p className="mb-4 text-xl font-semibold text-center">
+                      <p className="mb-4 text-lg md:text-xl font-semibold text-center">
                         {item?.title}
                       </p>
-                      <p className="text-center">{item?.review}</p>
-                      <p className="text-center mt-4">Posted by {item?.name}</p>
+                      <p className="text-center text-sm md:text-base">
+                        {item?.review}
+                      </p>
+                      <p className="text-center text-sm md:text-base mt-4">
+                        Posted by {item?.name}
+                      </p>
                     </div>
                   </CarouselItem>
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="bg-transparent outline-white text-white" />
-            <CarouselNext className="bg-transparent outline-white text-white" />
+            <CarouselPrevious className="hidden md:flex bg-transparent outline-white text-white" />
+            <CarouselNext className="hidden md:flex bg-transparent outline-white text-white" />
           </Carousel>
         </div>
       </BoxedContainer>

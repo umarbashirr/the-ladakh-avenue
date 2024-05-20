@@ -1,10 +1,9 @@
 "use client";
 
 import { Facilities, Site_Info } from "@/lib/data";
-import BoxedContainer from "../boxed-container";
-import SectionWrapper from "../section-wrapper";
-import SingleFacilityItem from "./single-facility-item";
 import Marquee from "react-fast-marquee";
+import BoxedContainer from "../boxed-container";
+import SingleFacilityItem from "./single-facility-item";
 
 const FacilitiesSection = () => {
   return (

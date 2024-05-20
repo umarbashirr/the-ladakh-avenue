@@ -13,7 +13,7 @@ interface SingleRoomCardProps {
 const SingleRoomCard = ({ title, price, image, slug }: SingleRoomCardProps) => {
   return (
     <div>
-      <div className="w-full h-[450px] relative overflow-hidden rounded-lg shadow-md group">
+      <div className="w-full h-[250px] md:h-[450px] relative overflow-hidden rounded-lg shadow-md group">
         <Image
           src={image}
           alt={`${image} title`}

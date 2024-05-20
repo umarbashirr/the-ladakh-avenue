@@ -20,13 +20,18 @@ const SingleBlogCard = ({
   image,
 }: SingleBlogCardInterface) => {
   return (
-    <article className="shadow-lg rounded-lg overflow-hidden group">
-      <div className="relative w-full h-[350px]">
-        <Image src={image} alt={title} fill className="object-cover" />
+    <article className="shadow-lg rounded-lg overflow-hidden group lg:even:scale-105">
+      <div className="relative w-full h-[250px] lg:h-[350px] overflow-hidden">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover transition-all ease-in-out duration-700 group-hover:scale-125"
+        />
         <div>{createdAt}</div>
       </div>
       <div className="py-10 px-16 relative w-full">
-        <h3 className="text-2xl font-bold mb-4">{title}</h3>
+        <h3 className="text-xl md:text-2xl font-bold mb-4">{title}</h3>
         <Link
           href={"/"}
           className="font-semibold text-[#978667] relative after:content-[''] after:bg-[#978667] after:w-[10%] after:h-[2px] after:absolute after:-bottom-2 after:left-0 after:group-hover:w-full after:duration-500 after:ease-in-out after:transition-all"

@@ -1,6 +1,7 @@
 "use client";
 
 import BoxedContainer from "../boxed-container";
+import HeroForm from "./hero-form";
 
 const HeroSection = () => {
   return (
@@ -14,7 +15,8 @@ const HeroSection = () => {
           <p className="text-white text-center font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
             A UNIQUE EXPERIENCE <br /> WHERE TO STAY
           </p>
-          <div className="bg-white h-16 w-full rounded-lg shadow-sm"></div>
+          {/* <div className="bg-white h-16 w-full rounded-lg shadow-sm"></div> */}
+          <HeroForm />
         </div>
       </BoxedContainer>
     </div>

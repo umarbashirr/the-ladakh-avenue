@@ -34,11 +34,11 @@ const AboutSection = () => {
           <Button className="bg-[#978667] mt-6">Learn more</Button>
         </div>
         <div className="relative">
-          <div className="bg-[url('/images/room-1.jpg')] bg-no-repeat bg-center bg-cover w-[70%] h-[600px] ml-auto relative rounded-lg">
+          <div className="bg-[url('/images/room-1.jpg')] bg-no-repeat bg-center bg-cover w-[70%] h-[400px] lg:h-[600px] ml-auto relative rounded-lg">
             <img
               src="/images/room-2.jpg"
               alt="room image"
-              className="rounded-lg object-cover border-4 w-[250px] h-[300px] border-white absolute top-1/2 -translate-y-1/2 -left-[125px]"
+              className="rounded-lg object-cover border-4 w-[250px] h-[200px] lg:h-[300px] border-white absolute top-1/2 -translate-y-1/2 -left-[125px]"
             />
           </div>
         </div>

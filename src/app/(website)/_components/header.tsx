@@ -4,6 +4,7 @@ import Link from "next/link";
 import BoxedContainer from "./boxed-container";
 import { Button } from "@/components/ui/button";
 import { MenuIcon } from "lucide-react";
+import Sidebar from "./sidebar";
 
 const Header = () => {
   return (
@@ -19,10 +20,13 @@ const Header = () => {
           </Link>
         </div>
         <nav className="navbar flex items-center gap-x-2">
-          <Button variant="secondary">Book Now</Button>
-          <Button size="icon" variant="ghost">
-            <MenuIcon className="text-white" />
+          <Button
+            variant="secondary"
+            className="bg-[#978667] text-white hover:bg-[#4B514D]"
+          >
+            Book Now
           </Button>
+          <Sidebar />
         </nav>
       </BoxedContainer>
     </header>

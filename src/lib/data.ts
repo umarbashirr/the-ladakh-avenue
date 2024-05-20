@@ -113,7 +113,7 @@ export const newsAndEvents = [
     slug: "chefs-special-taste-of-kashmir",
     createdAt: "2024-06-10",
     category: "News",
-    image: "/images/winter.jpg",
+    image: "/images/food.jpg",
     description:
       "Indulge in our Chef's Special menu, showcasing the rich flavors and culinary traditions of Kashmir. Available for a limited time.",
     author: "Admin",
