@@ -86,3 +86,66 @@ export const reviews = [
     name: "Emily M.",
   },
 ];
+
+export const newsAndEvents = [
+  {
+    title: "Snowpeak Hotel Grand Opening",
+    slug: "snowpeak-hotel-grand-opening",
+    createdAt: "2024-05-01",
+    category: "Events",
+    image: "/images/opening.jpg",
+    description:
+      "Join us for the grand opening of Snowpeak Hotel! Enjoy exclusive tours, gourmet tastings, and live entertainment as we celebrate our launch.",
+    author: "Admin",
+  },
+  {
+    title: "Winter Wonderland Festival",
+    slug: "winter-wonderland-festival",
+    createdAt: "2024-12-15",
+    category: "Events",
+    image: "/images/winter.jpg",
+    description:
+      "Experience the magic of winter at our Winter Wonderland Festival. Featuring ice sculptures, festive food, and activities for the whole family.",
+    author: "Admin",
+  },
+  {
+    title: "Chef’s Special: A Taste of Kashmir",
+    slug: "chefs-special-taste-of-kashmir",
+    createdAt: "2024-06-10",
+    category: "News",
+    image: "/images/winter.jpg",
+    description:
+      "Indulge in our Chef's Special menu, showcasing the rich flavors and culinary traditions of Kashmir. Available for a limited time.",
+    author: "Admin",
+  },
+  {
+    title: "New Spa Services Launched",
+    slug: "new-spa-services-launched",
+    createdAt: "2024-08-20",
+    category: "News",
+    image: "/images/winter.jpg",
+    description:
+      "We are excited to announce new additions to our spa services, including holistic therapies and personalized wellness programs.",
+    author: "Admin",
+  },
+  {
+    title: "Explore Pahalgam: Guided Hiking Tours",
+    slug: "explore-pahalgam-guided-hiking-tours",
+    createdAt: "2024-07-05",
+    category: "Events",
+    image: "/images/winter.jpg",
+    description:
+      "Discover the natural beauty of Pahalgam with our guided hiking tours. Suitable for all skill levels, these tours offer stunning views and memorable experiences.",
+    author: "Admin",
+  },
+  {
+    title: "Live Music Nights at Snowpeak Hotel",
+    slug: "live-music-nights",
+    createdAt: "2024-09-12",
+    category: "Events",
+    image: "/images/winter.jpg",
+    description:
+      "Enjoy live music performances every weekend at Snowpeak Hotel. Featuring local and international artists, it's the perfect way to unwind.",
+    author: "Admin",
+  },
+];

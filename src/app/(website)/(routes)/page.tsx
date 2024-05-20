@@ -1,5 +1,6 @@
 import AboutSection from "../_components/home/about-section";
 import AmenitiesSection from "../_components/home/amenities-section";
+import BlogSection from "../_components/home/blogs-section";
 import FacilitiesSection from "../_components/home/facilities-section";
 import HeroSection from "../_components/home/hero";
 import RoomsSuitesSection from "../_components/home/room-suites-section";
@@ -16,6 +17,7 @@ const Homepage = () => {
       <FacilitiesSection />
       <AmenitiesSection />
       <TestimonialSection />
+      <BlogSection />
     </div>
   );
 };
