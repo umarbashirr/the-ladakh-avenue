@@ -3,12 +3,26 @@
 import { Button } from "@/components/ui/button";
 import BoxedContainer from "../boxed-container";
 import SectionWrapper from "../section-wrapper";
+import { cn } from "@/lib/utils";
 
-const AboutSection = () => {
+interface AboutProps {
+  direction?: "rtl" | "ltr";
+  showButton?: boolean;
+}
+
+const AboutSection = ({
+  direction = "ltr",
+  showButton = false,
+}: AboutProps) => {
   return (
     <SectionWrapper>
-      <BoxedContainer className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-10">
-        <div className="self-auto lg:self-center">
+      <BoxedContainer
+        className={cn(
+          "flex flex-col gap-x-20 gap-y-10",
+          direction === "ltr" ? "lg:flex-row" : "lg:flex-row-reverse"
+        )}
+      >
+        <div className="self-auto lg:self-center flex-1">
           <h2 className="text-[#978667] uppercase font-medium mb-1">
             About Us
           </h2>
@@ -31,9 +45,11 @@ const AboutSection = () => {
             <li>Personalized concierge services to cater to your every need</li>
             <li>Outdoor activities and adventures for all seasons</li>
           </ul>
-          <Button className="bg-[#978667] mt-6">Learn more</Button>
+          {showButton && (
+            <Button className="bg-[#978667] mt-6">Learn more</Button>
+          )}
         </div>
-        <div className="relative">
+        <div className="relative flex-1">
           <div className="bg-[url('/images/room-1.jpg')] bg-no-repeat bg-center bg-cover w-[70%] h-[400px] lg:h-[600px] ml-auto relative rounded-lg">
             <img
               src="/images/room-2.jpg"

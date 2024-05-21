@@ -149,3 +149,56 @@ export const newsAndEvents = [
     author: "Admin",
   },
 ];
+
+export const faqs = [
+  {
+    question: "What are the check-in and check-out times?",
+    answer:
+      "Check-in is from 3:00 PM, and check-out is until 11:00 AM. Early check-in and late check-out are subject to availability and may incur additional charges.",
+  },
+  {
+    question: "Do you offer airport shuttle services?",
+    answer:
+      "Yes, we offer a complimentary airport shuttle service for our guests. Please contact our front desk in advance to arrange your pick-up and drop-off.",
+  },
+  {
+    question: "Is parking available at the hotel?",
+    answer:
+      "Yes, we offer secure private parking for our guests at no additional cost. Parking spaces are available on a first-come, first-served basis.",
+  },
+  {
+    question: "Do you provide free Wi-Fi?",
+    answer:
+      "Yes, complimentary high-speed Wi-Fi is available throughout the hotel, including guest rooms and public areas.",
+  },
+  {
+    question: "Are pets allowed at Snowpeak Hotel?",
+    answer:
+      "Unfortunately, pets are not allowed at Snowpeak Hotel. We apologize for any inconvenience this may cause.",
+  },
+  {
+    question: "What dining options are available at the hotel?",
+    answer:
+      "We offer a variety of dining options including our gourmet restaurant serving local and international cuisines, a cozy café, and room service for your convenience.",
+  },
+  {
+    question: "What activities are available near the hotel?",
+    answer:
+      "Snowpeak Hotel is located near several attractions and activities, including scenic hiking trails, the Lidder River, golf, skiing, and local cultural sites. Our concierge can help you plan your excursions.",
+  },
+  {
+    question: "Do you have facilities for events and meetings?",
+    answer:
+      "Yes, we have fully equipped meeting rooms and banquet facilities suitable for a variety of events, from business meetings to weddings. Please contact our events team for more information.",
+  },
+  {
+    question: "Is breakfast included in the room rate?",
+    answer:
+      "Breakfast is included in some of our room packages. Please check your booking details or contact our front desk to confirm whether breakfast is included.",
+  },
+  {
+    question: "What is your cancellation policy?",
+    answer:
+      "Our cancellation policy varies depending on the rate and dates of your reservation. Please refer to the terms and conditions of your booking for specific details or contact our reservations team for assistance.",
+  },
+];

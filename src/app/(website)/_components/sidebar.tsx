@@ -5,13 +5,16 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
 import { routes } from "@/lib/routes";
 import { Site_Info } from "@/lib/data";
+import { useState } from "react";
 
-const Sidebar = () => {
+interface SidebarProps {
+  isOpen: boolean;
+  setIsOpen: any;
+}
+
+const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
   return (
-    <Sheet>
-      <SheetTrigger>
-        <MenuIcon className="text-white" />
-      </SheetTrigger>
+    <Sheet open={isOpen} onOpenChange={() => setIsOpen(!open)}>
       <SheetContent side={"right"} className="z-50">
         <div className="p-8 bg-[#FAF8F5] text-center -m-6">
           <p className="uppercase whitespace">
@@ -26,6 +29,7 @@ const Sidebar = () => {
                 key={route.label}
                 href={route.path}
                 className="hover:text-[#978667] font-medium duration-200 ease-in-out transition-colors"
+                onClick={() => setIsOpen(false)}
               >
                 {route.label}
               </Link>
