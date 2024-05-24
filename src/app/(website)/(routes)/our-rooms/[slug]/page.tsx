@@ -39,7 +39,10 @@ const SingleRoomPage = ({ params }: { params: { slug: string } }) => {
           <div className="flex-1 grid grid-cols-2 gap-10">
             {currentRoom?.amenities?.map((el) => {
               return (
-                <div className="flex items-center justify-start gap-2 p-2 border-b">
+                <div
+                  className="flex items-center justify-start gap-2 p-2 border-b"
+                  key={el?.label}
+                >
                   <Image
                     src={el?.icon}
                     alt={el?.label}

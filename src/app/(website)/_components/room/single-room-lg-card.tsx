@@ -52,7 +52,10 @@ const SingleRoomLgCard = ({
         <div className="flex flex-col items-start justify-start md:flex-row md:items-center md:justify-start gap-4 mt-4">
           {amenities.slice(0, 3).map((amenity) => {
             return (
-              <div className="flex items-center justify-center gap-2">
+              <div
+                className="flex items-center justify-center gap-2"
+                key={amenity?.label}
+              >
                 <Image
                   src={amenity?.icon}
                   alt={amenity?.label}
