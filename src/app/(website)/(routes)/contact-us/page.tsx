@@ -11,8 +11,8 @@ const ContactPage = () => {
     <div>
       <PageHero title="Luxury Hotel Experience" heading="Contact Us" />
       <SectionWrapper>
-        <BoxedContainer className="grid grid-cols-1 md:grid-cols-[1fr_400px] gap-10 lg:gap-20">
-          <div className="flex-1">
+        <BoxedContainer className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-10 lg:gap-20">
+          <div>
             <h2 className="text-2xl font-bold mb-4">Get In Touch</h2>
             <ContactForm />
           </div>

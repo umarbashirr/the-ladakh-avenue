@@ -1,20 +1,19 @@
 "use client";
 
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 const formSchema = z.object({
   firstName: z.string().min(2).max(50),
@@ -38,21 +37,29 @@ const ContactForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch("/api/send-email/contact", {
+        method: "POST",
+        body: JSON.stringify(values),
+      });
+
+      const data = await response.json();
+
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
   }
   return (
-    <div>
-      <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className="gap-4 grid grid-cols-1 lg:grid-cols-2"
-        >
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <FormField
             control={form.control}
             name="firstName"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="col-span-2 md:col-span-1">
                 <FormLabel>First Name</FormLabel>
                 <FormControl>
                   <Input placeholder="Enter your first name" {...field} />
@@ -65,7 +72,7 @@ const ContactForm = () => {
             control={form.control}
             name="lastName"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="col-span-2 md:col-span-1">
                 <FormLabel>Last Name</FormLabel>
                 <FormControl>
                   <Input placeholder="Enter your last name" {...field} />
@@ -78,7 +85,7 @@ const ContactForm = () => {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="col-span-2 md:col-span-1">
                 <FormLabel>Email</FormLabel>
                 <FormControl>
                   <Input
@@ -93,9 +100,9 @@ const ContactForm = () => {
           />
           <FormField
             control={form.control}
-            name="firstName"
+            name="phone"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="col-span-2 md:col-span-1">
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
                   <Input placeholder="Enter your phone number" {...field} />
@@ -106,7 +113,7 @@ const ContactForm = () => {
           />
           <FormField
             control={form.control}
-            name="firstName"
+            name="message"
             render={({ field }) => (
               <FormItem className="col-span-2">
                 <FormLabel>Message</FormLabel>
@@ -121,12 +128,13 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-full lg:max-w-[105px]">
-            Submit
-          </Button>
-        </form>
-      </Form>
-    </div>
+        </div>
+
+        <Button type="submit" className="w-full sm:max-w-[105px]">
+          Submit
+        </Button>
+      </form>
+    </Form>
   );
 };
 

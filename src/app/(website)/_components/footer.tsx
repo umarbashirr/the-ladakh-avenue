@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import BoxedContainer from "./boxed-container";
 import { routes } from "@/lib/routes";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,42 @@ import { Send } from "lucide-react";
 import { Site_Info } from "@/lib/data";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [success, setSuccess] = useState(false);
+
+  const sendEmail = async () => {
+    try {
+      console.log(email);
+      const response = await fetch("/api/send-email/subscribe", {
+        method: "POST",
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (data?.response?.error) {
+        throw new Error(data?.response?.error);
+      }
+
+      setSuccess(true);
+      setEmail("");
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        setSuccess(false);
+      }, 3000);
+
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [success]);
+
   return (
     <Fragment>
       <div className="py-10 md:py-16 lg:py-28 bg-[#23262D]">
@@ -63,12 +99,15 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="bg-transparent focus:outline-none flex-grow text-sm"
                 />
                 <Button
                   size="icon"
                   variant="ghost"
                   className="hover:bg-transparent group"
+                  onClick={sendEmail}
                 >
                   <Send
                     color="#ffffff"
@@ -76,20 +115,29 @@ const Footer = () => {
                   />
                 </Button>
               </div>
-              <p className="text-sm mt-4 text-gray-400">
-                Receive latest offers and promos without spam. You can cancel
-                anytime.
-              </p>
+              {!success ? (
+                <p className="text-sm mt-4 text-gray-400">
+                  Receive latest offers and promos without spam. You can cancel
+                  anytime.
+                </p>
+              ) : (
+                <p className="text-sm mt-4 text-gray-400">
+                  Thanks for your subscription.
+                </p>
+              )}
             </div>
           </div>
         </BoxedContainer>
       </div>
       <div className="bg-[#1F2127] text-white font-light flex items-center justify-center p-6 tracking-wider text-sm text-center">
         <p>
-          &copy; 2024 by Snowpeak hotel. Powered by
-          <Link href="/" target="_blank" className="ml-1">
-            {" "}
-            Cool Tech Design
+          &copy; 2024 by Snowpeak hotel. Powered by{" "}
+          <Link
+            href="https://www.umarbashir.com"
+            target="_blank"
+            className="ml-1 underline underline-offset-4"
+          >
+            Umar Bashir
           </Link>
         </p>
       </div>
