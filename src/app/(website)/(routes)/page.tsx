@@ -6,6 +6,7 @@ import HeroSection from "../_components/home/hero";
 import RoomsSuitesSection from "../_components/home/room-suites-section";
 import TestimonialSection from "../_components/home/testimonials-section";
 import VideoSection from "../_components/home/video-section";
+import { rooms } from "@/lib/data";
 
 const Homepage = () => {
   return (
@@ -13,7 +14,7 @@ const Homepage = () => {
       <HeroSection />
       <AboutSection />
       <VideoSection />
-      <RoomsSuitesSection />
+      <RoomsSuitesSection rooms={rooms} title="Rooms and Suites" />
       <FacilitiesSection />
       <AmenitiesSection />
       <TestimonialSection />

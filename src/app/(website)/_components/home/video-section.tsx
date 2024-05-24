@@ -14,7 +14,7 @@ const VideoSection = () => {
       ></video>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
       <BoxedContainer className="relative flex flex-col text-white items-center justify-center">
-        <h2 className="text-[#978667] font-medium uppercase text-center mb-4">
+        <h2 className="text-primary font-medium uppercase text-center mb-4">
           Luxury Hotel experience
         </h2>
         <h3 className="text-4xl lg:text-5xl font-extrabold max-w-2xl text-center">

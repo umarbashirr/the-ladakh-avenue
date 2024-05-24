@@ -10,7 +10,7 @@ const FacilitiesContainer = () => {
   return (
     <BoxedContainer>
       <header className="mb-8 md:mb-12">
-        <p className="text-[#978667] font-medium text-center">
+        <p className="text-primary font-medium text-center">
           {Site_Info.title}
         </p>
         <h2 className="text-3xl font-bold text-center">{facilities.title}</h2>

@@ -16,6 +16,10 @@ export const routes = [
     path: "/gallery",
   },
   {
+    label: "News & Events",
+    path: "/news-and-events",
+  },
+  {
     label: "Contact",
     path: "/contact-us",
   },

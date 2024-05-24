@@ -33,8 +33,8 @@ const SingleBlogCard = ({
       <div className="py-10 px-16 relative w-full">
         <h3 className="text-xl md:text-2xl font-bold mb-4">{title}</h3>
         <Link
-          href={"/"}
-          className="font-semibold text-[#978667] relative after:content-[''] after:bg-[#978667] after:w-[10%] after:h-[2px] after:absolute after:-bottom-2 after:left-0 after:group-hover:w-full after:duration-500 after:ease-in-out after:transition-all"
+          href={`/news-and-events/${slug}`}
+          className="font-semibold text-primary relative after:content-[''] after:bg-primary after:w-[10%] after:h-[2px] after:absolute after:-bottom-2 after:left-0 after:group-hover:w-full after:duration-500 after:ease-in-out after:transition-all"
         >
           Read more
         </Link>

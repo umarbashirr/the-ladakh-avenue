@@ -10,7 +10,7 @@ const BlogSection = () => {
     <SectionWrapper>
       <BoxedContainer>
         <header className="mb-12">
-          <p className="text-[#978667] font-medium">Luxury Experience</p>
+          <p className="text-primary font-medium">Luxury Experience</p>
           <h2 className="text-3xl font-bold">News & Events</h2>
         </header>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">

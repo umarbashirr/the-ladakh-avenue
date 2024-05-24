@@ -23,9 +23,7 @@ const AboutSection = ({
         )}
       >
         <div className="self-auto lg:self-center flex-1">
-          <h2 className="text-[#978667] uppercase font-medium mb-1">
-            About Us
-          </h2>
+          <h2 className="text-primary uppercase font-medium mb-1">About Us</h2>
           <h3 className="font-bold text-3xl md:text-4xl mb-6">
             Welcome to Snowpeak Hotel
           </h3>
@@ -46,7 +44,7 @@ const AboutSection = ({
             <li>Outdoor activities and adventures for all seasons</li>
           </ul>
           {showButton && (
-            <Button className="bg-[#978667] mt-6">Learn more</Button>
+            <Button className="bg-primary mt-6">Learn more</Button>
           )}
         </div>
         <div className="relative flex-1">

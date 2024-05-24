@@ -26,7 +26,7 @@ const SingleAmenityItem = ({
       }`}
     >
       <div className=" flex-1">
-        <h2 className="text-[#978667] font-semibold capitalize">{title}</h2>
+        <h2 className="text-primary font-semibold capitalize">{title}</h2>
         <h3 className="text-2xl font-bold mb-4">{heading}</h3>
         <p className="text-muted-foreground leading-relaxed mb-4">{desc}</p>
         <Button

@@ -28,7 +28,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
               <Link
                 key={route.label}
                 href={route.path}
-                className="hover:text-[#978667] font-medium duration-200 ease-in-out transition-colors"
+                className="hover:text-primary font-medium duration-200 ease-in-out transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {route.label}

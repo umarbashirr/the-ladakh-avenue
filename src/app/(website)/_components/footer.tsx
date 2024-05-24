@@ -7,6 +7,7 @@ import BoxedContainer from "./boxed-container";
 import { routes } from "@/lib/routes";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
+import { Site_Info } from "@/lib/data";
 
 const Footer = () => {
   return (
@@ -15,14 +16,11 @@ const Footer = () => {
         <BoxedContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr] gap-10">
           <div className="text-white">
             <h3 className="text-xl font-bold mb-8">Contacts</h3>
-            <div className="flex flex-col gap-y-6">
-              <address>
-                Main Market Pahalgam, Distt. Anantnag, <br /> Jammu and Kashmir
-                - 192126
-              </address>
+            <div className="flex flex-col gap-y-6 w-full md:max-w-[350px] ">
+              <address>{Site_Info?.address}</address>
               <div className="text-[#EBD7B2] font-bold">
-                <p>info@snowpeakhotel.com</p>
-                <p>+91 7889737464</p>
+                <p>{Site_Info?.reservation_email}</p>
+                <p>{Site_Info?.phone}</p>
               </div>
               <div className="flex items-center justify-start gap-x-2">
                 <Image
