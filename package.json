@@ -1,7 +1,9 @@
 {
   "name": "snowpeak-hotel",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "author": "Umar Bashir Rather <mail.umarbashir@gmail.com>",
+  "description": "Welcome to Snowpeak Hotel, a luxurious mountain retreat offering stunning views, exquisite dining, and exceptional service in Pahalgam. Book your stay today for an unforgettable experience.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
