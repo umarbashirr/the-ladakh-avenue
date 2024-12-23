@@ -12,7 +12,7 @@ interface PageHeroProps {
 const PageHero = ({
   title,
   heading,
-  imgUrl = "/images/pexels-quang-nguyen-vinh-222549-6130040.jpg",
+  imgUrl = "/hotel-images/tla-33.jpeg",
   noMaxHeight = false,
 }: PageHeroProps) => {
   return (
@@ -23,12 +23,15 @@ const PageHero = ({
       )}
       style={{
         backgroundImage: `url(${imgUrl})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
       <BoxedContainer className="flex flex-col items-center justify-center relative">
         <p className="font-semibold text-[#EBD7B2] uppercase">{title}</p>
-        <h1 className="text-white mt-3 font-bold text-2xl md:text-6xl uppercase">
+        <h1 className="text-center text-white mt-3 font-bold text-2xl md:text-6xl uppercase">
           {heading}
         </h1>
       </BoxedContainer>

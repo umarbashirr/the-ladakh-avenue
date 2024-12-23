@@ -25,32 +25,37 @@ const AboutSection = ({
         <div className="self-auto lg:self-center flex-1">
           <h2 className="text-primary uppercase font-medium mb-1">About Us</h2>
           <h3 className="font-bold text-3xl md:text-4xl mb-6">
-            Welcome to Snowpeak Hotel
+            Welcome to The Ladakh Avenue
           </h3>
-          <p>
-            At Snowpeak Hotel, we pride ourselves on offering a luxurious
-            mountain retreat where comfort meets elegance. Nestled in the heart
-            of Pahalgam, our hotel provides an unparalleled experience with
-            stunning views and top-notch amenities. Our commitment to excellence
-            is reflected in every aspect of our service.
+          <p className="text-base leading-[2.5]">
+            The Ladakh Avenue is a peaceful retreat located just a short walk
+            from Leh&lsquo;s main market. Surrounded by the natural beauty of
+            Ladakh, our hotel provides comfortable rooms, modern facilities, and
+            a convenient location for exploring the region&lsquo;s cultural and
+            natural landmarks. Whether you&apos;re visiting for leisure or
+            adventure, we aim to make your stay comfortable and enjoyable.
           </p>
-          <ul className="list-disc ml-8 mt-4">
-            <li>Elegant and spacious rooms with breathtaking mountain views</li>
+          <h4 className="text-lg font-semibold mt-4">Our Key Features:</h4>
+          <ul className="list-disc ml-8 mt-4 flex flex-col gap-3">
+            <li>Located just 5 minutes from Leh&lsquo;s main market.</li>
+            <li>Rooms with private balconies offering mountain views.</li>
             <li>
-              Gourmet dining experiences with local and international cuisines
+              Modern amenities, including central heating and en-suite
+              bathrooms.
             </li>
-            <li>State-of-the-art spa and wellness center</li>
-            <li>Personalized concierge services to cater to your every need</li>
-            <li>Outdoor activities and adventures for all seasons</li>
+            <li>Spacious rooms and suites suitable for families and groups.</li>
+            <li>
+              Convenient access to local cultural and natural attractions.
+            </li>
           </ul>
           {showButton && (
             <Button className="bg-primary mt-6">Learn more</Button>
           )}
         </div>
         <div className="relative flex-1">
-          <div className="bg-[url('/images/room-1.jpg')] bg-no-repeat bg-center bg-cover w-[70%] h-[400px] lg:h-[600px] ml-auto relative rounded-lg">
+          <div className="bg-[url('/hotel-images/tla-32.jpeg')] bg-no-repeat bg-center bg-cover w-[70%] h-[400px] lg:h-[600px] ml-auto relative rounded-lg">
             <img
-              src="/images/room-2.jpg"
+              src="/hotel-images/tla-10.jpeg"
               alt="room image"
               className="rounded-lg object-cover border-4 w-[250px] h-[200px] lg:h-[300px] border-white absolute top-1/2 -translate-y-1/2 -left-[125px]"
             />

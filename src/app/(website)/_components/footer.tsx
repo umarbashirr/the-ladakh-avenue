@@ -1,62 +1,31 @@
-"use client";
-
+import { Site_Info } from "@/lib/data";
+import { PaymentOptions } from "@/lib/payment-options";
+import { routes } from "@/lib/routes";
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment, useEffect, useState } from "react";
+import { Fragment } from "react";
 import BoxedContainer from "./boxed-container";
-import { routes } from "@/lib/routes";
-import { Button } from "@/components/ui/button";
-import { Send } from "lucide-react";
-import { Site_Info } from "@/lib/data";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [success, setSuccess] = useState(false);
-
-  const sendEmail = async () => {
-    try {
-      console.log(email);
-      const response = await fetch("/api/send-email/subscribe", {
-        method: "POST",
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await response.json();
-
-      if (data?.response?.error) {
-        throw new Error(data?.response?.error);
-      }
-
-      setSuccess(true);
-      setEmail("");
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  useEffect(() => {
-    if (success) {
-      const timer = setTimeout(() => {
-        setSuccess(false);
-      }, 3000);
-
-      return () => {
-        clearTimeout(timer);
-      };
-    }
-  }, [success]);
-
   return (
     <Fragment>
       <div className="py-10 md:py-16 lg:py-28 bg-[#23262D]">
-        <BoxedContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr] gap-10">
+        <BoxedContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="text-white">
             <h3 className="text-xl font-bold mb-8">Contacts</h3>
             <div className="flex flex-col gap-y-6 w-full md:max-w-[350px] ">
               <address>{Site_Info?.address}</address>
               <div className="text-[#EBD7B2] font-bold">
-                <p>{Site_Info?.reservation_email}</p>
-                <p>{Site_Info?.phone}</p>
+                <Link href={`mailto:${Site_Info?.reservation_email}`}>
+                  {Site_Info?.reservation_email}
+                </Link>
+                <div className="flex flex-col gap-1 mt-2">
+                  {Site_Info?.phone.map((num) => (
+                    <Link href={`tel:${num}`} key={num}>
+                      {num}
+                    </Link>
+                  ))}
+                </div>
               </div>
               <div className="flex items-center justify-start gap-x-2">
                 <Image
@@ -93,38 +62,28 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-white">
-            <h3 className="text-xl font-bold mb-8">Newsletter</h3>
-            <div>
-              <div className="input-group flex items-center bg-white bg-opacity-5 w-full justify-between pl-2">
-                <input
-                  type="text"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="bg-transparent focus:outline-none flex-grow text-sm"
+            <h3 className="text-xl font-bold mb-8">Other Links</h3>
+            <div className="flex flex-col gap-y-3">
+              <Link href="/refund-and-cancellation-policy">
+                Refund & Cancellation
+              </Link>
+              <Link href="/terms-and-conditions">Terms & Conditions</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/child-and-extra-bed">Child & Extra Bed Policy</Link>
+            </div>
+          </div>
+          <div className="text-white">
+            <h3 className="text-xl font-bold mb-8">We Accept</h3>
+            <div className="flex items-center gap-2">
+              {PaymentOptions.map((image, index: number) => (
+                <Image
+                  key={index}
+                  src={image}
+                  alt="payment option image"
+                  width={70}
+                  height={40}
                 />
-                <Button
-                  size="icon"
-                  variant="ghost"
-                  className="hover:bg-transparent group"
-                  onClick={sendEmail}
-                >
-                  <Send
-                    color="#ffffff"
-                    className="size-5 group-hover:size-6 transition-all ease-in-out duration-200"
-                  />
-                </Button>
-              </div>
-              {!success ? (
-                <p className="text-sm mt-4 text-gray-400">
-                  Receive latest offers and promos without spam. You can cancel
-                  anytime.
-                </p>
-              ) : (
-                <p className="text-sm mt-4 text-gray-400">
-                  Thanks for your subscription.
-                </p>
-              )}
+              ))}
             </div>
           </div>
         </BoxedContainer>

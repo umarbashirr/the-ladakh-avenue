@@ -1,9 +1,9 @@
 {
-  "name": "snowpeak-hotel",
+  "name": "the-ladakh-avenue",
   "version": "1.0.0",
   "private": true,
   "author": "Umar Bashir Rather <mail.umarbashir@gmail.com>",
-  "description": "Welcome to Snowpeak Hotel, a luxurious mountain retreat offering stunning views, exquisite dining, and exceptional service in Pahalgam. Book your stay today for an unforgettable experience.",
+  "description": "Welcome to hotel The Ladakh Avenue, a luxurious mountain retreat offering stunning views, exquisite dining, and exceptional service in Ladakh. Book your stay today for an unforgettable experience.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -53,7 +53,7 @@
     "react": "^18",
     "react-day-picker": "^8.10.1",
     "react-dom": "^18",
-    "react-email": "2.1.4",
+    "react-email": "^3.0.4",
     "react-fast-marquee": "^1.6.4",
     "react-hook-form": "^7.51.4",
     "react-markdown": "^9.0.1",

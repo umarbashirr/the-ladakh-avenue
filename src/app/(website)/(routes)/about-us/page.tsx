@@ -11,7 +11,10 @@ import PageHero from "../../_components/page-hero";
 const AboutPage = () => {
   return (
     <>
-      <PageHero title="Enjoy Luxury Experience" heading="About Snowpeak" />
+      <PageHero
+        title="Enjoy Luxury Experience"
+        heading="About The Ladakh Avenue"
+      />
       <div className="bg-[#FAF8F5]">
         <AboutSection direction="rtl" />
       </div>

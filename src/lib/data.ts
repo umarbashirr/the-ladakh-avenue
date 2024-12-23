@@ -1,139 +1,72 @@
 export const Site_Info = {
-  title: "Snowpeak hotel",
-  reservation_email: "reservation@snowpeakhotel.com",
-  contact_email: "info@snowpeakhotel.com",
-  phone: "+91 7889737464",
-  address:
-    "Main Market Pahalgam, Distt. Anantnag, \n\n" +
-    "Jammu and Kashmir - 192126",
+  title: "The Ladakh Avenue",
+  reservation_email: "hotels@ecodiscovertravel.com",
+  phone: ["+91 7006853438", "+91 9797324071"],
+  address: "Karzoo Leh Ladakh 194101",
 };
 
 export const rooms = [
   {
-    title: "Deluxe Mountain View Room",
-    slug: "deluxe-mountain-view-room",
+    title: "Premium Room",
+    slug: "premium-room",
     description:
-      "Our Deluxe Mountain View Room offers stunning views of the mountains, featuring a king-size bed, modern amenities, and a private balcony.",
+      "The Premium Room offers a cozy stay with modern amenities and a private balcony for enjoying breathtaking mountain views.",
     amenities: [
       { label: "King-size bed", icon: "/icons/bed.svg" },
-      { label: "32 inch TV", icon: "/icons/tv.svg" },
+      { label: "Flat-screen TV", icon: "/icons/tv.svg" },
       { label: "Complimentary Wi-Fi", icon: "/icons/wifi.svg" },
-      { label: "Minibar", icon: "/icons/minibar.svg" },
-      { label: "Air conditioning", icon: "/icons/ac.svg" },
+      { label: "Central Heating", icon: "/icons/heating.svg" },
       { label: "Hot Water", icon: "/icons/hot-water.svg" },
-      { label: "Hair Dryer", icon: "/icons/hair-dryer.svg" },
-      { label: "Safety Locker", icon: "/icons/safety-locker.svg" },
+      { label: "Private Balcony", icon: "/icons/balcony.svg" },
+      { label: "En-suite Bathroom", icon: "/icons/bathroom.svg" },
       { label: "Wardrobe", icon: "/icons/wardrobe.svg" },
     ],
-    image: "/images/room-1.jpg",
-    pricePerNight: 12000,
-    headline: "Experience Unmatched Comfort and Scenic Views",
+    image: "/hotel-images/tla-5.jpeg",
+    pricePerNight: 2500,
+    headline: "Comfort and Stunning Views in Every Stay",
     about:
-      "The Deluxe Mountain View Room at Snowpeak Hotel offers an exquisite retreat for guests looking to indulge in comfort and luxury. \n\n" +
-      "This room is designed to provide breathtaking views of the majestic mountains, allowing guests to immerse themselves in the natural beauty of the surroundings. The room features a spacious king-size bed, ensuring a restful night's sleep.",
+      "The Premium Room is designed to provide a comfortable retreat for guests. Featuring a king-size bed and a private balcony, it offers stunning views of the surrounding mountains. Equipped with modern amenities like central heating, complimentary Wi-Fi, and an en-suite bathroom, this room ensures a cozy and relaxing stay.",
     galleryImages: [
-      "/images/room-1.jpg",
-      "/images/room-2.jpg",
-      "/images/room-3.jpg",
-      "/images/room-1.jpg",
-      "/images/room-2.jpg",
-      "/images/room-3.jpg",
+      "/hotel-images/tla-15.jpeg",
+      "/hotel-images/tla-16.jpeg",
+      "/hotel-images/tla-17.jpeg",
+      "/hotel-images/tla-18.jpeg",
+      "/hotel-images/tla-19.jpeg",
+      "/hotel-images/tla-26.jpeg",
+      "/hotel-images/tla-27.jpeg",
+      "/hotel-images/tla-31.jpeg",
     ],
   },
   {
-    title: "Executive Suite",
-    slug: "executive-suite",
+    title: "Signature Suite",
+    slug: "signature-suite",
     description:
-      "The Executive Suite provides a spacious living area, a separate bedroom with a king-size bed, and exceptional views. Ideal for business travelers or a luxurious stay.",
+      "The Signature Suite offers spacious luxury with two king-size beds, a private balcony, and modern amenities for a memorable stay.",
     amenities: [
-      { label: "King-size bed", icon: "/icons/bed.svg" },
-      { label: "32 inch TV", icon: "/icons/tv.svg" },
+      { label: "Two King-size Beds", icon: "/icons/bed.svg" },
+      { label: "Flat-screen TV", icon: "/icons/tv.svg" },
       { label: "Complimentary Wi-Fi", icon: "/icons/wifi.svg" },
-      { label: "Work desk", icon: "/icons/work-desk.svg" },
-      { label: "Minibar", icon: "/icons/minibar.svg" },
-      { label: "Air conditioning", icon: "/icons/ac.svg" },
+      { label: "Central Heating", icon: "/icons/heating.svg" },
       { label: "Hot Water", icon: "/icons/hot-water.svg" },
-      { label: "Hair Dryer", icon: "/icons/hair-dryer.svg" },
-      { label: "Safety Locker", icon: "/icons/safety-locker.svg" },
+      { label: "Private Balcony", icon: "/icons/balcony.svg" },
+      { label: "Separate Living Area", icon: "/icons/living-area.svg" },
+      { label: "En-suite Bathroom", icon: "/icons/bathroom.svg" },
       { label: "Wardrobe", icon: "/icons/wardrobe.svg" },
     ],
-    image: "/images/room-2.jpg",
-    pricePerNight: 20000,
-    headline: "Experience Unmatched Comfort and Scenic Views",
+    image: "/hotel-images/tla-10.jpeg",
+    pricePerNight: 3000,
+    headline: "Spacious Comfort with Breathtaking Views",
     about:
-      "The Executive Suite at Snowpeak Hotel is the epitome of sophistication and comfort, making it an ideal choice for both business travelers and guests seeking an indulgent stay. This suite offers a spacious living area where you can unwind or conduct meetings, and a separate bedroom featuring a plush king-size bed to ensure maximum comfort.\n\n" +
-      "Enjoy your favorite shows on a 32-inch flat-screen TV, stay connected with complimentary high-speed Wi-Fi, and keep refreshed with a fully stocked minibar. The suite also includes a dedicated work desk, allowing you to stay productive in a comfortable setting. Air conditioning ensures a pleasant environment regardless of the weather outside.",
+      "The Signature Suite is perfect for families or groups, offering ample space and luxury. With two king-size beds, a separate living area, and a private balcony, the suite ensures comfort and privacy. Modern amenities like central heating, complimentary Wi-Fi, and an en-suite bathroom add to the convenience, making your stay unforgettable.",
     galleryImages: [
-      "/images/room-1.jpg",
-      "/images/room-2.jpg",
-      "/images/room-3.jpg",
-      "/images/room-1.jpg",
-      "/images/room-2.jpg",
-      "/images/room-3.jpg",
-    ],
-  },
-  {
-    title: "Family Suite",
-    slug: "family-suite",
-    description:
-      "Perfect for families, the Family Suite includes two bedrooms, a spacious living area, and all the comforts of home with beautiful mountain views.",
-    amenities: [
-      { label: "Two king-size beds", icon: "/icons/bed.svg" },
-      { label: "32 inch TV", icon: "/icons/tv.svg" },
-      { label: "Complimentary Wi-Fi", icon: "/icons/wifi.svg" },
-      { label: "Work desk", icon: "/icons/work-desk.svg" },
-      { label: "Minibar", icon: "/icons/minibar.svg" },
-      { label: "Air conditioning", icon: "/icons/ac.svg" },
-      { label: "Hot Water", icon: "/icons/hot-water.svg" },
-      { label: "Hair Dryer", icon: "/icons/hair-dryer.svg" },
-      { label: "Safety Locker", icon: "/icons/safety-locker.svg" },
-      { label: "Wardrobe", icon: "/icons/wardrobe.svg" },
-    ],
-    image: "/images/room-3.jpg",
-    pricePerNight: 25000,
-    headline: "Experience Unmatched Comfort and Scenic Views",
-    about:
-      "The Family Suite at Snowpeak Hotel is designed to provide the perfect accommodation for families seeking comfort and convenience. This suite features two spacious bedrooms, each furnished with a luxurious king-size bed, ensuring that every family member enjoys a restful night's sleep. The suite's expansive living area is ideal for spending quality time together.\n\n" +
-      "The suite is equipped with modern amenities, including a minibar stocked with a variety of beverages and snacks, and air conditioning to keep the environment cool and comfortable. The en-suite bathroom comes with high-end toiletries, adding a touch of luxury to your stay. The suite also boasts beautiful views of the surrounding mountains, providing a stunning backdrop for your family vacation.",
-    galleryImages: [
-      "/images/room-1.jpg",
-      "/images/room-2.jpg",
-      "/images/room-3.jpg",
-      "/images/room-1.jpg",
-      "/images/room-2.jpg",
-      "/images/room-3.jpg",
-    ],
-  },
-  {
-    title: "Honeymoon Suite",
-    slug: "honeymoon-suite",
-    description:
-      "Designed for romance, the Honeymoon Suite offers a luxurious setting with a king-size bed, private balcony, and breathtaking views, perfect for couples.",
-    amenities: [
-      { label: "King-size bed", icon: "/icons/bed.svg" },
-      { label: "32 inch TV", icon: "/icons/tv.svg" },
-      { label: "Complimentary Wi-Fi", icon: "/icons/wifi.svg" },
-      { label: "Work desk", icon: "/icons/work-desk.svg" },
-      { label: "Minibar", icon: "/icons/minibar.svg" },
-      { label: "Air conditioning", icon: "/icons/ac.svg" },
-      { label: "Hot Water", icon: "/icons/hot-water.svg" },
-      { label: "Hair Dryer", icon: "/icons/hair-dryer.svg" },
-      { label: "Safety Locker", icon: "/icons/safety-locker.svg" },
-      { label: "Wardrobe", icon: "/icons/wardrobe.svg" },
-    ],
-    image: "/images/room-4.jpg",
-    pricePerNight: 30000,
-    headline: "Experience Unmatched Comfort and Scenic Views",
-    about:
-      "The Honeymoon Suite at Snowpeak Hotel is a sanctuary for couples seeking a romantic getaway. This luxurious suite is thoughtfully designed to provide an intimate and memorable experience. The centerpiece of the suite is the plush king-size bed, offering unparalleled comfort. Couples can enjoy the stunning panoramic views from their private balcony.\n\n" +
-      "The suite is equipped with a 32-inch flat-screen TV, complimentary high-speed Wi-Fi, and a minibar stocked with premium beverages. The air conditioning ensures a comfortable environment, while the en-suite bathroom features high-end toiletries and a spa-like ambiance. The Honeymoon Suite is an ideal setting for celebrating love and creating unforgettable memories.",
-    galleryImages: [
-      "/images/room-1.jpg",
-      "/images/room-2.jpg",
-      "/images/room-3.jpg",
-      "/images/room-1.jpg",
-      "/images/room-2.jpg",
-      "/images/room-3.jpg",
+      "/hotel-images/tla-2.jpeg",
+      "/hotel-images/tla-3.jpeg",
+      "/hotel-images/tla-4.jpeg",
+      "/hotel-images/tla-5.jpeg",
+      "/hotel-images/tla-6.jpeg",
+      "/hotel-images/tla-7.jpeg",
+      "/hotel-images/tla-8.jpeg",
+      "/hotel-images/tla-31.jpeg",
     ],
   },
 ];
@@ -167,16 +100,30 @@ export const Facilities = {
 export const localAmenities = [
   {
     title: "local amenities",
-    heading: "Scenic Hiking Trails",
-    desc: "Discover the breathtaking beauty of Pahalgam with numerous hiking trails, including the famous Betaab Valley and Aru Valley trails. Perfect for nature enthusiasts and adventure seekers.",
-    image: "/images/hiking.jpg",
+    heading: "Breathtaking Monasteries",
+    desc: "Explore iconic monasteries like Hemis, Thiksey, and Diskit, known for their stunning architecture, serene ambiance, and cultural significance.",
+    image: "/images/monastery.jpg",
     direction: "ltr",
   },
   {
     title: "local amenities",
-    heading: "Local Attractions",
-    desc: "Visit nearby attractions like the serene Lidder River, Sheshnag Lake, and the historic Mamleshwar Temple to immerse yourself in the rich cultural and natural heritage of Pahalgam.",
-    image: "/images/lidder-river.jpg",
+    heading: "Adventure Activities",
+    desc: "Engage in thrilling activities such as river rafting in the Zanskar River, trekking across challenging trails, and mountain biking through scenic routes.",
+    image: "/images/mountain-biking-ladakh.jpg",
+    direction: "rtl",
+  },
+  {
+    title: "local amenities",
+    heading: "Pangong Lake",
+    desc: "Visit the mesmerizing Pangong Lake, known for its ever-changing colors and tranquil surroundings, a must-see destination in Ladakh.",
+    image: "/images/pangong.jpg",
+    direction: "ltr",
+  },
+  {
+    title: "local amenities",
+    heading: "Local Culture and Markets",
+    desc: "Immerse yourself in Ladakhi culture by visiting the local markets and enjoying traditional cuisine, handicrafts, and hospitality.",
+    image: "/images/ladakh-market.jpeg",
     direction: "rtl",
   },
 ];
@@ -297,106 +244,201 @@ Live Music Nights at Snowpeak Hotel are the perfect way to unwind after a busy w
 
 export const faqs = [
   {
-    question: "What are the check-in and check-out times?",
+    question: "What is the location of The Ladakh Avenue?",
     answer:
-      "Check-in is from 3:00 PM, and check-out is until 11:00 AM. Early check-in and late check-out are subject to availability and may incur additional charges.",
+      "The Ladakh Avenue is located on Karzoo Road, just a 5-minute walk from Leh’s main market. Its strategic location offers easy access to cultural landmarks and breathtaking mountain views.",
   },
   {
-    question: "Do you offer airport shuttle services?",
+    question: "What room options are available at The Ladakh Avenue?",
     answer:
-      "Yes, we offer a complimentary airport shuttle service for our guests. Please contact our front desk in advance to arrange your pick-up and drop-off.",
+      "We offer two types of accommodations: the Premium Room, designed for up to 3 guests, and the Signature Suite, accommodating up to 5 guests with luxurious amenities and private balconies.",
   },
   {
-    question: "Is parking available at the hotel?",
+    question: "What amenities are included in the rooms?",
     answer:
-      "Yes, we offer secure private parking for our guests at no additional cost. Parking spaces are available on a first-come, first-served basis.",
+      "Both room types feature king-size beds, private balconies, complimentary Wi-Fi, flat-screen TVs, central heating, en-suite bathrooms, and more. The Signature Suite also includes a separate living area.",
   },
   {
-    question: "Do you provide free Wi-Fi?",
+    question: "What activities can I do in Leh Ladakh during my stay?",
     answer:
-      "Yes, complimentary high-speed Wi-Fi is available throughout the hotel, including guest rooms and public areas.",
+      "Guests can explore iconic monasteries like Hemis and Thiksey, enjoy adventure activities such as river rafting and trekking, visit Pangong Lake, and immerse themselves in the local culture and markets.",
   },
   {
-    question: "Are pets allowed at Snowpeak Hotel?",
+    question: "What is the child policy at The Ladakh Avenue?",
     answer:
-      "Unfortunately, pets are not allowed at Snowpeak Hotel. We apologize for any inconvenience this may cause.",
+      "Children up to 5 years stay free without an extra bed. For children aged 5 to 10 years, extra charges apply based on whether a bed is required. Guests aged above 10 years are considered adults.",
   },
   {
-    question: "What dining options are available at the hotel?",
+    question: "What is the cancellation policy?",
     answer:
-      "We offer a variety of dining options including our gourmet restaurant serving local and international cuisines, a cozy café, and room service for your convenience.",
-  },
-  {
-    question: "What activities are available near the hotel?",
-    answer:
-      "Snowpeak Hotel is located near several attractions and activities, including scenic hiking trails, the Lidder River, golf, skiing, and local cultural sites. Our concierge can help you plan your excursions.",
-  },
-  {
-    question: "Do you have facilities for events and meetings?",
-    answer:
-      "Yes, we have fully equipped meeting rooms and banquet facilities suitable for a variety of events, from business meetings to weddings. Please contact our events team for more information.",
-  },
-  {
-    question: "Is breakfast included in the room rate?",
-    answer:
-      "Breakfast is included in some of our room packages. Please check your booking details or contact our front desk to confirm whether breakfast is included.",
-  },
-  {
-    question: "What is your cancellation policy?",
-    answer:
-      "Our cancellation policy varies depending on the rate and dates of your reservation. Please refer to the terms and conditions of your booking for specific details or contact our reservations team for assistance.",
+      "Cancellations made up to 14 days before check-in receive a full refund. Cancellations made 13 to 7 days before check-in receive a 50% refund. No refunds are provided for cancellations within 7 days of check-in.",
   },
 ];
 
 export const photos = [
   {
-    title: "Sunset Over the Ocean",
-    src: "/images/room-1.jpg",
-    alt: "A beautiful sunset over the ocean with orange and purple hues.",
+    src: "/hotel-images/tla-1.jpeg",
+    alt: "Hotel room view 1",
+    title: "Premium Hotel Room - View 1",
   },
   {
-    title: "Mountain Landscape",
-    src: "/images/room-2.jpg",
-    alt: "A scenic view of mountains with a clear blue sky.",
+    src: "/hotel-images/tla-2.jpeg",
+    alt: "Hotel room view 2",
+    title: "Premium Hotel Room - View 2",
   },
   {
-    title: "City Skyline",
-    src: "/images/room-3.jpg",
-    alt: "A bustling city skyline with tall skyscrapers at dusk.",
+    src: "/hotel-images/tla-3.jpeg",
+    alt: "Hotel room view 3",
+    title: "Premium Hotel Room - View 3",
   },
   {
-    title: "Forest Pathway",
-    src: "/images/room-4.jpg",
-    alt: "A peaceful forest pathway surrounded by tall trees.",
+    src: "/hotel-images/tla-4.jpeg",
+    alt: "Hotel room view 4",
+    title: "Premium Hotel Room - View 4",
   },
   {
-    title: "Desert Dunes",
-    src: "/images/room-5.jpg",
-    alt: "Golden sand dunes in a vast desert under a bright sky.",
+    src: "/hotel-images/tla-5.jpeg",
+    alt: "Hotel room view 5",
+    title: "Premium Hotel Room - View 5",
   },
   {
-    title: "Sunset Over the Ocean",
-    src: "/images/room-1.jpg",
-    alt: "A beautiful sunset over the ocean with orange and purple hues.",
+    src: "/hotel-images/tla-6.jpeg",
+    alt: "Hotel room view 6",
+    title: "Premium Hotel Room - View 6",
   },
   {
-    title: "Mountain Landscape",
-    src: "/images/room-2.jpg",
-    alt: "A scenic view of mountains with a clear blue sky.",
+    src: "/hotel-images/tla-7.jpeg",
+    alt: "Hotel room view 7",
+    title: "Premium Hotel Room - View 7",
   },
   {
-    title: "City Skyline",
-    src: "/images/room-3.jpg",
-    alt: "A bustling city skyline with tall skyscrapers at dusk.",
+    src: "/hotel-images/tla-8.jpeg",
+    alt: "Hotel room view 8",
+    title: "Premium Hotel Room - View 8",
   },
   {
-    title: "Forest Pathway",
-    src: "/images/room-4.jpg",
-    alt: "A peaceful forest pathway surrounded by tall trees.",
+    src: "/hotel-images/tla-9.jpeg",
+    alt: "Hotel room view 9",
+    title: "Premium Hotel Room - View 9",
   },
   {
-    title: "Desert Dunes",
-    src: "/images/room-5.jpg",
-    alt: "Golden sand dunes in a vast desert under a bright sky.",
+    src: "/hotel-images/tla-10.jpeg",
+    alt: "Hotel room view 10",
+    title: "Premium Hotel Room - View 10",
+  },
+  {
+    src: "/hotel-images/tla-11.jpeg",
+    alt: "Hotel room view 11",
+    title: "Premium Hotel Room - View 11",
+  },
+  {
+    src: "/hotel-images/tla-12.jpeg",
+    alt: "Hotel room view 12",
+    title: "Premium Hotel Room - View 12",
+  },
+  {
+    src: "/hotel-images/tla-13.jpeg",
+    alt: "Hotel room view 13",
+    title: "Premium Hotel Room - View 13",
+  },
+  {
+    src: "/hotel-images/tla-14.jpeg",
+    alt: "Hotel room view 14",
+    title: "Premium Hotel Room - View 14",
+  },
+  {
+    src: "/hotel-images/tla-15.jpeg",
+    alt: "Hotel room view 15",
+    title: "Premium Hotel Room - View 15",
+  },
+  {
+    src: "/hotel-images/tla-16.jpeg",
+    alt: "Hotel room view 16",
+    title: "Premium Hotel Room - View 16",
+  },
+  {
+    src: "/hotel-images/tla-17.jpeg",
+    alt: "Hotel room view 17",
+    title: "Premium Hotel Room - View 17",
+  },
+  {
+    src: "/hotel-images/tla-18.jpeg",
+    alt: "Hotel room view 18",
+    title: "Premium Hotel Room - View 18",
+  },
+  {
+    src: "/hotel-images/tla-19.jpeg",
+    alt: "Hotel room view 19",
+    title: "Premium Hotel Room - View 19",
+  },
+  {
+    src: "/hotel-images/tla-20.jpeg",
+    alt: "Hotel room view 20",
+    title: "Premium Hotel Room - View 20",
+  },
+  {
+    src: "/hotel-images/tla-21.jpeg",
+    alt: "Hotel room view 21",
+    title: "Premium Hotel Room - View 21",
+  },
+  {
+    src: "/hotel-images/tla-22.jpeg",
+    alt: "Hotel room view 22",
+    title: "Premium Hotel Room - View 22",
+  },
+  {
+    src: "/hotel-images/tla-23.jpeg",
+    alt: "Hotel room view 23",
+    title: "Premium Hotel Room - View 23",
+  },
+  {
+    src: "/hotel-images/tla-24.jpeg",
+    alt: "Hotel room view 24",
+    title: "Premium Hotel Room - View 24",
+  },
+  {
+    src: "/hotel-images/tla-25.jpeg",
+    alt: "Hotel room view 25",
+    title: "Premium Hotel Room - View 25",
+  },
+  {
+    src: "/hotel-images/tla-26.jpeg",
+    alt: "Hotel room view 26",
+    title: "Premium Hotel Room - View 26",
+  },
+  {
+    src: "/hotel-images/tla-27.jpeg",
+    alt: "Hotel room view 27",
+    title: "Premium Hotel Room - View 27",
+  },
+  {
+    src: "/hotel-images/tla-28.jpeg",
+    alt: "Hotel room view 28",
+    title: "Premium Hotel Room - View 28",
+  },
+  {
+    src: "/hotel-images/tla-29.jpeg",
+    alt: "Hotel room view 29",
+    title: "Premium Hotel Room - View 29",
+  },
+  {
+    src: "/hotel-images/tla-30.jpeg",
+    alt: "Hotel room view 30",
+    title: "Premium Hotel Room - View 30",
+  },
+  {
+    src: "/hotel-images/tla-31.jpeg",
+    alt: "Hotel room view 31",
+    title: "Premium Hotel Room - View 31",
+  },
+  {
+    src: "/hotel-images/tla-32.jpeg",
+    alt: "Hotel room view 32",
+    title: "Premium Hotel Room - View 32",
+  },
+  {
+    src: "/hotel-images/tla-33.jpeg",
+    alt: "Hotel room view 33",
+    title: "Premium Hotel Room - View 33",
   },
 ];
