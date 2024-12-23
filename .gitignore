@@ -37,4 +37,4 @@ yarn-error.log*
 next-env.d.ts
 
 snowpeak-template.zip
-.env.env
+.env
