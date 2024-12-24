@@ -69,12 +69,15 @@ const SingleRoomLgCard = ({
         </div>
         <hr className="my-4" />
         <div className="flex items-center justify-between">
-          <div className="relative h-9 flex items-center justify-between bg-primary w-9 overflow-visible whitespace-nowrap rounded-full hover:text-white hover:w-[136px] duration-300 ease-in-out transition-all cursor-pointer">
+          <Link
+            href="https://bookings.asiatech.in/?page=8149"
+            className="relative h-9 flex items-center justify-between bg-primary w-9 overflow-visible whitespace-nowrap rounded-full hover:text-white hover:w-[136px] duration-300 ease-in-out transition-all cursor-pointer"
+          >
             <ChevronRight size={24} className="ml-[8px] text-white absolute" />
             <span className="absolute left-12 font-semibold text-sm">
               Book Now
             </span>
-          </div>
+          </Link>
           <Link
             className="text-sm font-semibold relative after:content-[''] after:bg-[#333] after:w-[0%] after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:hover:w-full after:duration-500 after:ease-in-out after:transition-all"
             href={`/our-rooms/${slug}`}

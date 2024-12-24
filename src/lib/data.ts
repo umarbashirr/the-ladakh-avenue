@@ -151,93 +151,19 @@ export const reviews = [
 
 export const newsAndEvents = [
   {
-    title: "Snowpeak Hotel Grand Opening",
-    slug: "snowpeak-hotel-grand-opening",
-    createdAt: "2024-05-01",
+    title: "Ladakh Avenue Grand Opening",
+    slug: "ladakh-avenue-grand-opening",
+    createdAt: "2025-03-15",
     category: "Events",
-    image: "/images/opening.jpg",
+    image: "/hotel-images/tla-4.jpeg",
     description: `
-Join us for the grand opening of Snowpeak Hotel! This highly anticipated event will feature exclusive tours of our luxurious new facilities. From the elegantly designed rooms to the state-of-the-art amenities, you’ll get a first-hand look at what makes Snowpeak Hotel the ultimate destination for luxury and comfort.
+Celebrate the grand opening of Ladakh Avenue, the newest hub of culture, shopping, and entertainment in the heart of Ladakh! Join us on this special day as we unveil an exceptional destination that combines modern luxury with the rich heritage of Ladakh.
 
-Our grand opening celebration includes gourmet tastings from our world-class chefs. Savor a variety of culinary delights prepared with the freshest ingredients, each dish showcasing the creativity and expertise of our culinary team. 
+Experience a guided tour of Ladakh Avenue, featuring vibrant retail spaces, unique cultural exhibits, and world-class dining options. Get an exclusive first look at what makes this venue a must-visit for both locals and tourists alike.
 
-To make the event even more memorable, we’ve arranged live entertainment throughout the day. Enjoy performances from talented musicians and entertainers as we celebrate this exciting milestone. Whether you’re a local resident or a visiting guest, the grand opening of Snowpeak Hotel is an event you won’t want to miss.
-`,
-    author: "Admin",
-  },
-  {
-    title: "Winter Wonderland Festival",
-    slug: "winter-wonderland-festival",
-    createdAt: "2024-12-15",
-    category: "Events",
-    image: "/images/winter.jpg",
-    description: `
-Experience the magic of winter at our Winter Wonderland Festival. This enchanting event transforms our venue into a festive paradise, complete with breathtaking ice sculptures and twinkling lights that capture the spirit of the season. 
+Our grand opening event will also feature delicious tastings from our curated selection of restaurants and cafes. Indulge in diverse flavors and signature dishes crafted by talented chefs to tantalize your taste buds.
 
-Indulge in a variety of festive foods that will warm your heart and satisfy your taste buds. From traditional winter treats to gourmet delicacies, there’s something for everyone to enjoy. 
-
-The Winter Wonderland Festival is perfect for families, offering a range of activities that children and adults alike will love. Join us for a day of fun and celebration as we embrace the beauty and joy of winter.
-`,
-    author: "Admin",
-  },
-  {
-    title: "Chef’s Special: A Taste of Kashmir",
-    slug: "chefs-special-taste-of-kashmir",
-    createdAt: "2024-06-10",
-    category: "News",
-    image: "/images/food.jpg",
-    description: `
-Indulge in our Chef's Special menu, showcasing the rich flavors and culinary traditions of Kashmir. For a limited time, we invite you to savor dishes that highlight the unique spices and ingredients of this vibrant region. 
-
-Each dish is carefully crafted by our expert chefs, bringing a taste of Kashmir's culinary heritage to your plate. Whether you’re a fan of savory meats or aromatic vegetarian dishes, our menu offers something to delight every palate. 
-
-Join us for an unforgettable dining experience that celebrates the artistry and flavors of Kashmiri cuisine. Don’t miss this opportunity to explore new tastes and enjoy a special culinary journey.
-`,
-    author: "Admin",
-  },
-  {
-    title: "New Spa Services Launched",
-    slug: "new-spa-services-launched",
-    createdAt: "2024-08-20",
-    category: "News",
-    image: "/images/winter.jpg",
-    description: `
-We are excited to announce new additions to our spa services at Snowpeak Hotel. Our expanded offerings now include holistic therapies designed to enhance your well-being and relaxation. 
-
-Experience personalized wellness programs tailored to meet your individual needs. From rejuvenating facials to soothing massages, our new services are crafted to provide a serene escape from the everyday hustle. 
-
-Our team of skilled therapists is dedicated to ensuring that each visit to our spa is a rejuvenating and restorative experience. Discover the ultimate in relaxation and wellness with our new spa services.
-`,
-    author: "Admin",
-  },
-  {
-    title: "Explore Pahalgam: Guided Hiking Tours",
-    slug: "explore-pahalgam-guided-hiking-tours",
-    createdAt: "2024-07-05",
-    category: "Events",
-    image: "/images/winter.jpg",
-    description: `
-Discover the natural beauty of Pahalgam with our guided hiking tours. These tours offer an incredible opportunity to explore stunning landscapes and enjoy breathtaking views. 
-
-Suitable for all skill levels, our guided hikes are led by experienced guides who will share insights about the local flora and fauna. Whether you’re an avid hiker or a casual nature enthusiast, our tours provide a memorable outdoor experience. 
-
-Join us for an adventure that combines physical activity with the serene beauty of nature. Experience the best of Pahalgam’s natural scenery and create lasting memories with our guided hiking tours.
-`,
-    author: "Admin",
-  },
-  {
-    title: "Live Music Nights at Snowpeak Hotel",
-    slug: "live-music-nights",
-    createdAt: "2024-09-12",
-    category: "Events",
-    image: "/images/winter.jpg",
-    description: `
-Enjoy live music performances every weekend at Snowpeak Hotel. Our Live Music Nights feature a diverse lineup of local and international artists, offering a rich variety of musical styles. 
-
-Relax in our cozy lounge and enjoy the vibrant atmosphere created by live performances. Whether you prefer jazz, rock, or classical music, our events promise an evening of entertainment and enjoyment. 
-
-Live Music Nights at Snowpeak Hotel are the perfect way to unwind after a busy week. Join us for great music, good company, and a wonderful ambiance that will make your weekends special.
-`,
+Adding to the festive atmosphere, we’ve arranged live performances by local artists and musicians throughout the day. Immerse yourself in the sights and sounds of Ladakhi culture while celebrating this landmark occasion. Don’t miss out on the excitement—be a part of history as we inaugurate Ladakh Avenue!`,
     author: "Admin",
   },
 ];

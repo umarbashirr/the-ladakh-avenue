@@ -10,9 +10,38 @@ import VideoSection from "../_components/home/video-section";
 import { rooms } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Snowpeak Hotel | Luxury Mountain Retreat in Pahalgam",
+  title: "The Ladakh Avenue - Premium Stay in Leh Ladakh",
   description:
-    "Welcome to Snowpeak Hotel, a luxurious mountain retreat offering stunning views, exquisite dining, and exceptional service in [Location]. Book your stay today for an unforgettable experience.",
+    "Experience unparalleled comfort and scenic beauty at The Ladakh Avenue. Enjoy luxurious rooms, modern amenities, and breathtaking views in the heart of Leh Ladakh.",
+  alternates: {
+    canonical: `${process.env.APP_URL}`,
+  },
+  keywords: [
+    "luxury hotel",
+    "The Ladakh Avenue",
+    "Leh hotels",
+    "Ladakh resorts",
+    "premium stay in Leh Ladakh",
+    "luxury accommodation Ladakh",
+    "scenic hotels Ladakh",
+  ].join(", "),
+  openGraph: {
+    type: "website",
+    locale: "en",
+    siteName: "The Ladakh Avenue",
+    title: "The Ladakh Avenue - Premium Stay in Leh Ladakh",
+    description:
+      "Experience unparalleled comfort and scenic beauty at The Ladakh Avenue. Enjoy luxurious rooms, modern amenities, and breathtaking views in the heart of Leh Ladakh.",
+    url: `${process.env.APP_URL}`,
+    images: [`${process.env.APP_URL}/og.png`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Ladakh Avenue - Premium Stay in Leh Ladakh",
+    description:
+      "Experience unparalleled comfort and scenic beauty at The Ladakh Avenue. Enjoy luxurious rooms, modern amenities, and breathtaking views in the heart of Leh Ladakh.",
+    images: [`${process.env.APP_URL}/og.png`],
+  },
 };
 
 const Homepage = () => {
@@ -24,7 +53,7 @@ const Homepage = () => {
       <RoomsSuitesSection rooms={rooms} title="Rooms and Suites" />
       <FacilitiesSection />
       <AmenitiesSection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <BlogSection />
     </div>
   );

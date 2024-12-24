@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { format } from "date-fns";
+import { format, formatDate } from "date-fns";
 import { CalendarIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -40,9 +40,12 @@ const HeroForm = () => {
 
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+    const checkInDate = formatDate(values.checkInDate, "yyyy-MM-dd");
+    const checkOutDate = formatDate(values.checkOutDate, "yyyy-MM-dd");
+    window.open(
+      `https://bookings.asiatech.in/?page=8149&checkin=${checkInDate}&checkout=${checkOutDate}`,
+      "_blank"
+    );
   }
   return (
     <div className="flex items-center justify-center z-30 relative lg:px-4">

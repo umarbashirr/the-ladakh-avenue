@@ -41,21 +41,23 @@ const Header = () => {
         <div className="logo">
           <Link
             href="/"
+            target="_self"
             className={cn(
               "flex flex-col items-center gap-0 uppercase text-white",
               isSticky ? "text-primary" : "text-white"
             )}
           >
-            <span className="text-xl font-bold">Snowpeak</span>
-            <span>Hotel</span>
+            <span className="text-xl font-bold">The Ladakh</span>
+            <span>Avenue</span>
           </Link>
         </div>
         <nav className="navbar flex items-center gap-x-2">
           <Button
             variant="secondary"
             className="bg-primary text-white hover:bg-[#4B514D]"
+            asChild
           >
-            Book Now
+            <Link href="https://bookings.asiatech.in/?page=8149">Book Now</Link>
           </Button>
           <Button
             variant="ghost"

@@ -21,6 +21,7 @@ const SingleRoomPage = ({ params }: { params: { slug: string } }) => {
         imgUrl={currentRoom?.image}
         noMaxHeight={true}
       />
+
       <SectionWrapper>
         <BoxedContainer className="flex flex-col lg:flex-row items-start lg:justify-between gap-10 lg:gap-40">
           <div className="flex-1 ">
@@ -57,7 +58,7 @@ const SingleRoomPage = ({ params }: { params: { slug: string } }) => {
         </BoxedContainer>
       </SectionWrapper>
       <GallerySlider currentRoom={currentRoom} />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <RoomsSuitesSection
         rooms={rooms.filter((room) => room.slug !== currentRoom?.slug)}
         title="Other Similar Rooms"

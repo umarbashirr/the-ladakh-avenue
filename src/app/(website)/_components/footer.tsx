@@ -70,6 +70,7 @@ const Footer = () => {
               <Link href="/terms-and-conditions">Terms & Conditions</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>
               <Link href="/child-and-extra-bed">Child & Extra Bed Policy</Link>
+              <Link href="/practical-information">Practical Information</Link>
             </div>
           </div>
           <div className="text-white">
@@ -90,13 +91,13 @@ const Footer = () => {
       </div>
       <div className="bg-[#1F2127] text-white font-light flex items-center justify-center p-6 tracking-wider text-sm text-center">
         <p>
-          &copy; 2024 by Snowpeak hotel. Powered by{" "}
+          &copy; {new Date().getFullYear()} by The Ladakh Avenue. Powered by{" "}
           <Link
-            href="https://www.umarbashir.com"
+            href="https://www.cooltechdesign.com"
             target="_blank"
             className="ml-1 underline underline-offset-4"
           >
-            Umar Bashir
+            Cool Tech Design
           </Link>
         </p>
       </div>

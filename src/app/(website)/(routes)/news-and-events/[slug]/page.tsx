@@ -12,7 +12,8 @@ const Page = ({ params }: { params: { slug: string } }) => {
   return (
     <div>
       <PageHero
-        noMaxHeight
+        noMaxHeight={false}
+        imgUrl={currentPost?.image}
         title={currentPost?.category || ""}
         heading={currentPost?.title || ""}
       />
