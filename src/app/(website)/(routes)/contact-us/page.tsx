@@ -39,7 +39,6 @@ const ContactPage = () => {
                 />
                 <h3 className="text-xl font-semibold mb-1">Email</h3>
                 <p>{Site_Info?.reservation_email}</p>
-                <p>{Site_Info?.contact_email}</p>
               </div>
               <div>
                 <Image
