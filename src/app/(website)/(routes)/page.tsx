@@ -7,6 +7,8 @@ import FacilitiesSection from "../_components/home/facilities-section";
 import HeroSection from "../_components/home/hero";
 import RoomsSuitesSection from "../_components/home/room-suites-section";
 import VideoSection from "../_components/home/video-section";
+import Script from "next/script";
+import { JSONLD } from "@/lib/schemaJson";
 
 export const metadata: Metadata = {
   title: "The Ladakh Avenue - Premium Stay in Leh Ladakh",
@@ -45,7 +47,12 @@ export const metadata: Metadata = {
 
 const Homepage = () => {
   return (
-    <div>
+    <>
+      <Script
+        type="application/ld+json"
+        id="structure-data-of-webpage"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }}
+      />
       <HeroSection />
       <AboutSection />
       <VideoSection />
@@ -54,7 +61,7 @@ const Homepage = () => {
       {/* <AmenitiesSection /> */}
       {/* <TestimonialSection /> */}
       <BlogSection />
-    </div>
+    </>
   );
 };
 
