@@ -7,12 +7,12 @@ import { MenuIcon } from "lucide-react";
 import Sidebar from "./sidebar";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { useScrollDirection } from "@/hooks/useScrollDirection";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isSticky, setIsSticky] = useState(false);
-  const scrollDirection = useScrollDirection();
+  const pathname = usePathname();
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -33,8 +33,7 @@ const Header = () => {
     <header
       className={cn(
         "relative h-20 flex items-center justify-center w-full z-50",
-        isSticky ? "sticky  left-0 bg-white" : "bg-transparent",
-        scrollDirection === "down" ? "-top-20" : "top-0"
+        isSticky ? "sticky top-0  left-0 bg-white border-b" : "bg-transparent"
       )}
     >
       <BoxedContainer className="flex items-center justify-between">
@@ -49,6 +48,59 @@ const Header = () => {
           >
             <span className="text-xl font-bold">The Ladakh</span>
             <span>Avenue</span>
+          </Link>
+        </div>
+        <div className="items-center justify-center gap-4 hidden lg:flex">
+          <Link
+            href="our-rooms"
+            className={cn(
+              " font-medium",
+              isSticky ? "text-[#333" : "text-white",
+              pathname === "/our-rooms" && "underline underline-offset-8"
+            )}
+          >
+            Our Rooms
+          </Link>
+          <Link
+            href="https://www.ecodiscovertravel.com/our-packages/ladakh-packages"
+            target="_blank"
+            className={cn(
+              " font-medium",
+              isSticky ? "text-[#333" : "text-white"
+            )}
+          >
+            Our Packages
+          </Link>
+          <Link
+            href="/gallery"
+            className={cn(
+              " font-medium",
+              isSticky ? "text-[#333" : "text-white",
+              pathname === "/gallery" && "underline underline-offset-8"
+            )}
+          >
+            Our Gallery
+          </Link>
+          <Link
+            href="/practical-information"
+            className={cn(
+              " font-medium",
+              isSticky ? "text-[#333" : "text-white",
+              pathname === "/practical-information" &&
+                "underline underline-offset-8"
+            )}
+          >
+            Practical Information
+          </Link>
+          <Link
+            href="/contact-us"
+            className={cn(
+              " font-medium",
+              isSticky ? "text-[#333" : "text-white",
+              pathname === "/contact-us" && "underline underline-offset-8"
+            )}
+          >
+            Contact Us
           </Link>
         </div>
         <nav className="navbar flex items-center gap-x-2">
