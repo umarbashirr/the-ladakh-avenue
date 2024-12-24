@@ -51,7 +51,7 @@ const Homepage = () => {
       <VideoSection />
       <RoomsSuitesSection rooms={rooms} title="Rooms and Suites" />
       <FacilitiesSection />
-      <AmenitiesSection />
+      {/* <AmenitiesSection /> */}
       {/* <TestimonialSection /> */}
       <BlogSection />
     </div>

@@ -53,13 +53,7 @@ const AboutSection = ({
           )}
         </div>
         <div className="relative flex-1">
-          <div className="bg-[url('/hotel-images/tla-32.jpeg')] bg-no-repeat bg-center bg-cover w-[70%] h-[400px] lg:h-[600px] ml-auto relative rounded-lg">
-            <img
-              src="/hotel-images/tla-10.jpeg"
-              alt="room image"
-              className="rounded-lg object-cover border-4 w-[250px] h-[200px] lg:h-[300px] border-white absolute top-1/2 -translate-y-1/2 -left-[125px]"
-            />
-          </div>
+          <div className="bg-[url('/hotel-images/tla-10.jpeg')] bg-no-repeat bg-center bg-cover w-[90%] h-[400px] lg:h-[600px] ml-auto relative rounded-lg"></div>
         </div>
       </BoxedContainer>
     </SectionWrapper>
