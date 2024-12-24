@@ -1,6 +1,41 @@
 import PageHero from "../../_components/page-hero";
 import BoxedContainer from "../../_components/boxed-container";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Practical Information - The Ladakh Avenue",
+  description:
+    "Get essential practical information for your stay at The Ladakh Avenue. Plan your Leh Ladakh trip with tips on weather, transportation, and more.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/practical-information`,
+  },
+  keywords: [
+    "The Ladakh Avenue practical tips",
+    "Leh Ladakh travel information",
+    "hotel guide Ladakh",
+    "Ladakh Avenue weather tips",
+    "Leh Ladakh travel planning",
+    "stay tips Ladakh hotel",
+  ].join(", "),
+  openGraph: {
+    type: "website",
+    locale: "en",
+    siteName: "The Ladakh Avenue",
+    title: "Practical Information - The Ladakh Avenue",
+    description:
+      "Get essential practical information for your stay at The Ladakh Avenue. Plan your Leh Ladakh trip with tips on weather, transportation, and more.",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/practical-information`,
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Practical Information - The Ladakh Avenue",
+    description:
+      "Get essential practical information for your stay at The Ladakh Avenue. Plan your Leh Ladakh trip with tips on weather, transportation, and more.",
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+};
 
 const LadakhTravelInfoPage = () => {
   return (

@@ -5,6 +5,41 @@ import PageHero from "../../_components/page-hero";
 import SectionWrapper from "../../_components/section-wrapper";
 import { Site_Info } from "@/lib/data";
 import Markdown from "react-markdown";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - The Ladakh Avenue",
+  description:
+    "Get in touch with The Ladakh Avenue. Contact us for reservations, inquiries, or assistance. We’re here to make your stay in Leh Ladakh unforgettable.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/contact-us`,
+  },
+  keywords: [
+    "The Ladakh Avenue contact",
+    "contact Leh hotel",
+    "Ladakh Avenue inquiries",
+    "hotel reservations Ladakh",
+    "contact luxury hotel Ladakh",
+    "Leh Ladakh customer support",
+  ].join(", "),
+  openGraph: {
+    type: "website",
+    locale: "en",
+    siteName: "The Ladakh Avenue",
+    title: "Contact Us - The Ladakh Avenue",
+    description:
+      "Get in touch with The Ladakh Avenue. Contact us for reservations, inquiries, or assistance. We’re here to make your stay in Leh Ladakh unforgettable.",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/contact-us`,
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us - The Ladakh Avenue",
+    description:
+      "Get in touch with The Ladakh Avenue. Contact us for reservations, inquiries, or assistance. We’re here to make your stay in Leh Ladakh unforgettable.",
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+};
 
 const ContactPage = () => {
   return (

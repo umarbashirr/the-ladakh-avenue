@@ -37,14 +37,6 @@ export const routes = [
 export const allRoutes = [
   ...routes,
   {
-    label: "Premium Room",
-    path: "/our-rooms/premium-room",
-  },
-  {
-    label: "Signature Suite",
-    path: "/our-rooms/signature-suite",
-  },
-  {
     label: "Privacy Policy",
     path: "/privacy-policy",
   },

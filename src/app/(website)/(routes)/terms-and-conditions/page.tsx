@@ -1,6 +1,41 @@
 import PageHero from "../../_components/page-hero";
 import BoxedContainer from "../../_components/boxed-container";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions - The Ladakh Avenue",
+  description:
+    "Review the terms and conditions for staying at The Ladakh Avenue. Understand our policies to ensure a seamless and enjoyable experience in Leh Ladakh.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/terms-and-conditions`,
+  },
+  keywords: [
+    "The Ladakh Avenue terms",
+    "hotel policies",
+    "Leh Ladakh stay rules",
+    "Ladakh Avenue conditions",
+    "hotel booking terms",
+    "guest policies Ladakh",
+  ].join(", "),
+  openGraph: {
+    type: "website",
+    locale: "en",
+    siteName: "The Ladakh Avenue",
+    title: "Terms & Conditions - The Ladakh Avenue",
+    description:
+      "Review the terms and conditions for staying at The Ladakh Avenue. Understand our policies to ensure a seamless and enjoyable experience in Leh Ladakh.",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/terms-and-conditions`,
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms & Conditions - The Ladakh Avenue",
+    description:
+      "Review the terms and conditions for staying at The Ladakh Avenue. Understand our policies to ensure a seamless and enjoyable experience in Leh Ladakh.",
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+};
 
 const TermsAndConditionsPage = () => {
   return (

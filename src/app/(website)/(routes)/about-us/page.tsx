@@ -7,6 +7,41 @@ import AboutSection from "../../_components/home/about-section";
 import AmenitiesSection from "../../_components/home/amenities-section";
 import TestimonialSection from "../../_components/home/testimonials-section";
 import PageHero from "../../_components/page-hero";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us - The Ladakh Avenue",
+  description:
+    "Learn more about The Ladakh Avenue, your premier destination for luxury and comfort in Leh Ladakh. Discover our story, vision, and commitment to hospitality.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/about-us`,
+  },
+  keywords: [
+    "about The Ladakh Avenue",
+    "luxury hotel in Leh",
+    "Ladakh hospitality",
+    "Leh premium stay",
+    "about Ladakh Avenue",
+    "luxury accommodation Ladakh",
+  ].join(", "),
+  openGraph: {
+    type: "website",
+    locale: "en",
+    siteName: "The Ladakh Avenue",
+    title: "About Us - The Ladakh Avenue",
+    description:
+      "Learn more about The Ladakh Avenue, your premier destination for luxury and comfort in Leh Ladakh. Discover our story, vision, and commitment to hospitality.",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/about-us`,
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us - The Ladakh Avenue",
+    description:
+      "Learn more about The Ladakh Avenue, your premier destination for luxury and comfort in Leh Ladakh. Discover our story, vision, and commitment to hospitality.",
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+};
 
 const AboutPage = () => {
   return (

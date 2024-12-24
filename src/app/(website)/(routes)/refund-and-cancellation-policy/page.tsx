@@ -1,6 +1,41 @@
 import PageHero from "../../_components/page-hero";
 import BoxedContainer from "../../_components/boxed-container";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Refund & Cancellation Policy - The Ladakh Avenue",
+  description:
+    "Understand our refund and cancellation policy at The Ladakh Avenue. Plan your stay in Leh Ladakh with confidence and clarity.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/refund-and-cancellation-policy`,
+  },
+  keywords: [
+    "The Ladakh Avenue refund policy",
+    "hotel cancellation terms",
+    "Leh Ladakh refund conditions",
+    "Ladakh Avenue booking policies",
+    "hotel stay cancellation",
+    "refund terms Ladakh hotel",
+  ].join(", "),
+  openGraph: {
+    type: "website",
+    locale: "en",
+    siteName: "The Ladakh Avenue",
+    title: "Refund & Cancellation Policy - The Ladakh Avenue",
+    description:
+      "Understand our refund and cancellation policy at The Ladakh Avenue. Plan your stay in Leh Ladakh with confidence and clarity.",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/refund-and-cancellation-policy`,
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Refund & Cancellation Policy - The Ladakh Avenue",
+    description:
+      "Understand our refund and cancellation policy at The Ladakh Avenue. Plan your stay in Leh Ladakh with confidence and clarity.",
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+};
 
 const RefundCancellationPage = () => {
   return (

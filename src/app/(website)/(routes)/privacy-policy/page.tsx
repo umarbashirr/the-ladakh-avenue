@@ -1,6 +1,41 @@
 import PageHero from "../../_components/page-hero";
 import BoxedContainer from "../../_components/boxed-container";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - The Ladakh Avenue",
+  description:
+    "Learn about our privacy practices at The Ladakh Avenue. Your personal information and privacy are our top priority during your stay in Leh Ladakh.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/privacy-policy`,
+  },
+  keywords: [
+    "The Ladakh Avenue privacy policy",
+    "hotel data practices",
+    "guest information security",
+    "Ladakh Avenue privacy",
+    "Leh Ladakh hotel policies",
+    "data protection practices",
+  ].join(", "),
+  openGraph: {
+    type: "website",
+    locale: "en",
+    siteName: "The Ladakh Avenue",
+    title: "Privacy Policy - The Ladakh Avenue",
+    description:
+      "Learn about our privacy practices at The Ladakh Avenue. Your personal information and privacy are our top priority during your stay in Leh Ladakh.",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/privacy-policy`,
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy - The Ladakh Avenue",
+    description:
+      "Learn about our privacy practices at The Ladakh Avenue. Your personal information and privacy are our top priority during your stay in Leh Ladakh.",
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+};
 
 const PrivacyPolicyPage = () => {
   return (

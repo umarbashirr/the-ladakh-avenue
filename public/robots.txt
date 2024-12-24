@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /*?_rsc=*
+
+# Host
+Host: https://www.theladakhavenue.com
+
+# Sitemaps
+Sitemap: https://www.theladakhavenue.com/sitemap.xml

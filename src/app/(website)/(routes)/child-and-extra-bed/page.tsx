@@ -1,6 +1,41 @@
 import PageHero from "../../_components/page-hero";
 import BoxedContainer from "../../_components/boxed-container";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Child & Extra Bed Policy - The Ladakh Avenue",
+  description:
+    "Review our child and extra bed policies for a seamless stay at The Ladakh Avenue. Plan your visit to Leh Ladakh with all necessary information.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/child-and-extra-bed`,
+  },
+  keywords: [
+    "The Ladakh Avenue child policy",
+    "extra bed policy Ladakh",
+    "hotel family stay rules",
+    "Ladakh Avenue stay with kids",
+    "Leh Ladakh hotel policies",
+    "family-friendly hotels Ladakh",
+  ].join(", "),
+  openGraph: {
+    type: "website",
+    locale: "en",
+    siteName: "The Ladakh Avenue",
+    title: "Child & Extra Bed Policy - The Ladakh Avenue",
+    description:
+      "Review our child and extra bed policies for a seamless stay at The Ladakh Avenue. Plan your visit to Leh Ladakh with all necessary information.",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/child-and-extra-bed`,
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Child & Extra Bed Policy - The Ladakh Avenue",
+    description:
+      "Review our child and extra bed policies for a seamless stay at The Ladakh Avenue. Plan your visit to Leh Ladakh with all necessary information.",
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/og.jpeg`],
+  },
+};
 
 const ChildExtraBedPolicyPage = () => {
   return (
