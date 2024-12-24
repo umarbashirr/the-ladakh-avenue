@@ -12,7 +12,10 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import { z } from "zod";
 
 const formSchema = z.object({
@@ -22,10 +25,11 @@ const formSchema = z.object({
   phone: z.string().min(10, {
     message: "Enter valid phone number",
   }),
-  message: z.string().min(10),
+  message: z.string().min(2),
 });
 
 const ContactForm = () => {
+  const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -46,8 +50,18 @@ const ContactForm = () => {
 
       const data = await response.json();
 
-      console.log(data);
+      if (response.status > 299) {
+        toast.error("Error while sending email");
+        return;
+      }
+
+      toast.success("Email Sent");
+
+      form.reset();
+
+      router.refresh();
     } catch (error) {
+      toast.error("Error while sending email");
       console.error(error);
     }
   }
@@ -62,7 +76,11 @@ const ContactForm = () => {
               <FormItem className="col-span-2 md:col-span-1">
                 <FormLabel>First Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your first name" {...field} />
+                  <Input
+                    placeholder="Enter your first name"
+                    {...field}
+                    disabled={form.formState.isSubmitting}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -75,7 +93,11 @@ const ContactForm = () => {
               <FormItem className="col-span-2 md:col-span-1">
                 <FormLabel>Last Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your last name" {...field} />
+                  <Input
+                    placeholder="Enter your last name"
+                    {...field}
+                    disabled={form.formState.isSubmitting}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -92,6 +114,7 @@ const ContactForm = () => {
                     type="email"
                     placeholder="Enter your email"
                     {...field}
+                    disabled={form.formState.isSubmitting}
                   />
                 </FormControl>
                 <FormMessage />
@@ -105,7 +128,11 @@ const ContactForm = () => {
               <FormItem className="col-span-2 md:col-span-1">
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your phone number" {...field} />
+                  <Input
+                    placeholder="Enter your phone number"
+                    {...field}
+                    disabled={form.formState.isSubmitting}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -122,6 +149,7 @@ const ContactForm = () => {
                     rows={8}
                     placeholder="Enter your message"
                     {...field}
+                    disabled={form.formState.isSubmitting}
                   />
                 </FormControl>
                 <FormMessage />
@@ -130,8 +158,15 @@ const ContactForm = () => {
           />
         </div>
 
-        <Button type="submit" className="w-full sm:max-w-[105px]">
-          Submit
+        <Button
+          type="submit"
+          className="w-full sm:max-w-[160px] flex items-center justify-center text-center gap-2"
+          disabled={form.formState.isSubmitting}
+        >
+          {form.formState.isSubmitting && (
+            <Loader2 className="w-4 h-4 animate-spin" />
+          )}
+          {form.formState.isSubmitting ? "Please wait..." : "Submit"}
         </Button>
       </form>
     </Form>
