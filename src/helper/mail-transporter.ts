@@ -5,7 +5,7 @@ export const transporter = nodemailer.createTransport({
   port: "465",
   secure: "true",
   auth: {
-    user: "hotels@ecodiscovertravel.com",
-    pass: "mnksaaomqebvelqp",
+    user: process.env.HOTEL_EMAIL,
+    pass: process.env.MAIL_APP,
   },
 });
