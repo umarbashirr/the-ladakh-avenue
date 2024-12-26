@@ -54,7 +54,7 @@ export const rooms = [
     pricePerNight: 2500,
     headline: "Comfort and Stunning Views in Every Stay",
     about:
-      "The Premium Room is designed to provide a comfortable retreat for guests. Featuring a king-size bed and a private balcony, it offers stunning views of the surrounding with korakoram moutain ranges. Equipped with modern amenities like central heating, complimentary Wi-Fi, and an en-suite bathroom, this room ensures a cozy and relaxing stay.",
+      "The Premium Room is designed to provide a comfortable retreat for guests. Featuring a king-size bed and a private balcony, it offers stunning views of the surrounding with korakoram moutain ranges. Equipped with modern amenities like complimentary Wi-Fi, and an en-suite bathroom, this room ensures a cozy and relaxing stay.",
     galleryImages: [
       "/hotel-images/tla-15.jpeg",
       "/hotel-images/tla-16.jpeg",
@@ -114,7 +114,7 @@ export const rooms = [
     pricePerNight: 3000,
     headline: "Spacious Comfort with Breathtaking Views",
     about:
-      "The Signature Suite is perfect for families or groups, offering ample space and luxury. With two king-size beds, a separate living area, and a private balcony, the suite ensures comfort and privacy. Modern amenities like central heating, complimentary Wi-Fi, and an en-suite bathroom add to the convenience, making your stay unforgettable.",
+      "The Signature Suite is perfect for families or groups, offering ample space and luxury. With two king-size beds, a separate living area, and a private balcony, the suite ensures comfort and privacy. Modern amenities like complimentary Wi-Fi, and an en-suite bathroom add to the convenience, making your stay unforgettable.",
     galleryImages: [
       "/hotel-images/tla-2.jpeg",
       "/hotel-images/tla-3.jpeg",

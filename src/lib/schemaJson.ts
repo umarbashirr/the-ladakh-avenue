@@ -47,7 +47,7 @@ export const JSONLD = {
     telephone: "+91 7006853438",
     email: "hotels@ecodiscovertravel.com",
     checkinTime: "11:00",
-    checkoutTime: "10:30",
+    checkoutTime: "10:00",
     starRating: {
       "@type": "Rating",
       bestRating: "5",
@@ -103,7 +103,7 @@ export const JSONLD = {
       },
       {
         "@type": "LocationFeatureSpecification",
-        name: "Oxygen Cylinder Facilities",
+        name: "Oxygen Cylinder Facilities (Paid on Request)",
         value: "True",
       },
       {
@@ -234,11 +234,6 @@ export const JSONLD = {
       {
         "@type": "LocationFeatureSpecification",
         name: "Body Wash",
-        value: "True",
-      },
-      {
-        "@type": "LocationFeatureSpecification",
-        name: "Fully Centrally Heated Soon",
         value: "True",
       },
       {

@@ -39,10 +39,7 @@ const AboutSection = ({
           <ul className="list-disc ml-8 mt-4 flex flex-col gap-3">
             <li>Located just 5 minutes from Leh main market.</li>
             <li>Rooms with private balconies offering mountain views.</li>
-            <li>
-              Modern amenities, including central heating and en-suite
-              bathrooms.
-            </li>
+            <li>Modern amenities, including en-suite bathrooms.</li>
             <li>Spacious rooms and suites suitable for families and groups.</li>
             <li>
               Convenient access to local cultural and natural attractions.

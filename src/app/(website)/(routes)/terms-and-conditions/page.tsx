@@ -82,7 +82,7 @@ const TermsAndConditionsPage = () => {
               </h2>
               <ul className="list-disc list-inside mt-4 text-gray-700 space-y-2">
                 <li>
-                  Check-in time is 2:00 PM, and check-out time is 12:00 PM.
+                  Check-in time is 11:00 AM, and check-out time is 10:00 AM.
                 </li>
                 <li>
                   Early check-in and late check-out are subject to availability

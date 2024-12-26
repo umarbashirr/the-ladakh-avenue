@@ -98,7 +98,7 @@ const OurHotelAmenitiesPage = () => {
                 <li>Bone Fire</li>
                 <li>Wheel Chair</li>
                 <li>Doctor on Call Available</li>
-                <li>Oxygen Cylinder Facilities</li>
+                <li>Oxygen Cylinder Facilities (Paid on request)</li>
                 <li>24/7 CCTV Surveillance for guest safety.</li>
                 <li>Luggage Carrier from Parking to Room</li>
               </ul>
