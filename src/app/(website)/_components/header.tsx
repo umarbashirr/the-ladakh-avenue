@@ -62,6 +62,17 @@ const Header = () => {
             Our Rooms
           </Link>
           <Link
+            href="/our-hotel-amenities"
+            className={cn(
+              " font-medium",
+              isSticky ? "text-[#333" : "text-white",
+              pathname === "/our-hotel-amenities" &&
+                "underline underline-offset-8"
+            )}
+          >
+            Amenities
+          </Link>
+          <Link
             href="https://www.ecodiscovertravel.com/our-packages/ladakh-packages"
             target="_blank"
             className={cn(

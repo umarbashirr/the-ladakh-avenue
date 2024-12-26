@@ -13,7 +13,7 @@ const HeroSection = () => {
             Luxury Hotel Experience
           </h1>
           <p className="text-white text-center font-extrabold text-4xl md:text-5xl  lg:text-6xl xl:text-7xl lg:leading-normal xl:leading-normal mb-6">
-            Your Premium Retreat in the Heart <br /> of Ladakh
+            Your Premium Retreat in the <br /> Heart of Ladakh
           </p>
           <div className="lg:hidden">
             <HeroForm />

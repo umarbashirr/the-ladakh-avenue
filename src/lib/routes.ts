@@ -16,6 +16,10 @@ export const routes = [
     path: "/gallery",
   },
   {
+    label: "Amenities",
+    path: "/our-hotel-amenities",
+  },
+  {
     label: "Our Ladakh Packages",
     path: "https://www.ecodiscovertravel.com/our-packages/ladakh-packages",
     target: "_blank",
@@ -50,6 +54,10 @@ export const allRoutes = [
   {
     label: "Our Gallery",
     path: "/gallery",
+  },
+  {
+    label: "Amenities",
+    path: "/our-hotel-amenities",
   },
   {
     label: "Practical Information",

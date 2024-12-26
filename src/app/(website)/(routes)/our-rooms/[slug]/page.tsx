@@ -4,7 +4,7 @@ import PageHero from "@/app/(website)/_components/page-hero";
 import GallerySlider from "@/app/(website)/_components/room/gallery-slider";
 import SectionWrapper from "@/app/(website)/_components/section-wrapper";
 import { rooms } from "@/lib/data";
-import Image from "next/image";
+import { CheckIcon } from "lucide-react";
 import Markdown from "react-markdown";
 
 export async function generateMetadata({
@@ -59,11 +59,11 @@ const SingleRoomPage = ({ params }: { params: { slug: string } }) => {
         title="Luxury Hotel Experience"
         heading={currentRoom?.title || ""}
         imgUrl={currentRoom?.image}
-        noMaxHeight={true}
+        noMaxHeight={false}
       />
 
       <SectionWrapper>
-        <BoxedContainer className="flex flex-col lg:flex-row items-start lg:justify-between gap-10 lg:gap-40">
+        <BoxedContainer className="flex flex-col items-start lg:justify-between gap-10 ">
           <div className="flex-1 ">
             <div className="max-w-[80%]">
               <p className="text-primary uppercase font-medium mb-1">
@@ -77,23 +77,23 @@ const SingleRoomPage = ({ params }: { params: { slug: string } }) => {
               </div>
             </div>
           </div>
-          <div className="flex-1 grid grid-cols-2 gap-10">
-            {currentRoom?.amenities?.map((el) => {
-              return (
-                <div
-                  className="flex items-center justify-start gap-2 p-2 border-b"
-                  key={el?.label}
-                >
-                  <Image
-                    src={el?.icon}
-                    alt={el?.label}
-                    width={32}
-                    height={32}
-                  />
-                  <p className="text-primary">{el?.label}</p>
-                </div>
-              );
-            })}
+          <div>
+            <h2 className="text-gray-900 font-semibold text-3xl mb-8">
+              Our Amenities
+            </h2>
+            <ul className="grid grid-cols-2 md:grid-cols-3 gap-8">
+              {currentRoom?.amenities?.map((el) => {
+                return (
+                  <li
+                    className="text-gray-900 flex flex-row gap-2 items-start justify-start"
+                    key={el?.label}
+                  >
+                    <CheckIcon className="w-4 h-4 text-green-500 shrink-0 mt-1" />{" "}
+                    {el?.label}
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </BoxedContainer>
       </SectionWrapper>

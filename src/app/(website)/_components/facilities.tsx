@@ -5,6 +5,8 @@ import BoxedContainer from "./boxed-container";
 import { Site_Info } from "@/lib/data";
 import { Facilities as facilities } from "@/lib/data";
 import SingleFacilityItem from "./home/single-facility-item";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const FacilitiesContainer = () => {
   return (
@@ -19,6 +21,11 @@ const FacilitiesContainer = () => {
         {facilities.items.map((facility) => {
           return <SingleFacilityItem key={facility.title} {...facility} />;
         })}
+      </div>
+      <div className="flex items-center justify-center mt-10">
+        <Button variant="outline" size="lg" asChild>
+          <Link href="/our-hotel-amenities">View All Facilities</Link>
+        </Button>
       </div>
     </BoxedContainer>
   );

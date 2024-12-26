@@ -37,7 +37,7 @@ const AboutSection = ({
           </p>
           <h4 className="text-lg font-semibold mt-4">Our Key Features:</h4>
           <ul className="list-disc ml-8 mt-4 flex flex-col gap-3">
-            <li>Located just 5 minutes from Leh&lsquo;s main market.</li>
+            <li>Located just 5 minutes from Leh main market.</li>
             <li>Rooms with private balconies offering mountain views.</li>
             <li>
               Modern amenities, including central heating and en-suite

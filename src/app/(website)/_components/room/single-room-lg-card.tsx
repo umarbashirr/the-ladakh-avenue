@@ -1,8 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ChevronRight, ChevronRightCircle } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -50,7 +49,7 @@ const SingleRoomLgCard = ({
         <h2 className="font-bold text-2xl">{title}</h2>
         <p className="mt-4">{description}</p>
         <div className="flex flex-col items-start justify-start md:flex-row md:items-center md:justify-start gap-4 mt-4">
-          {amenities.slice(0, 3).map((amenity) => {
+          {amenities.slice(0, 2).map((amenity) => {
             return (
               <div
                 className="flex items-center justify-center gap-2"
