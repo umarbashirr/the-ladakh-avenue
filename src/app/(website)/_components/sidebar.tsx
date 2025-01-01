@@ -1,7 +1,6 @@
 "use client";
 
 import { Sheet, SheetContent } from "@/components/ui/sheet";
-import { Site_Info } from "@/lib/data";
 import { routes } from "@/lib/routes";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,7 +36,6 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
                 href={route.path}
                 className="hover:text-primary font-medium duration-200 ease-in-out transition-colors"
                 onClick={() => setIsOpen(false)}
-                target={route.target ? route.target : "_self"}
               >
                 {route.label}
               </Link>
