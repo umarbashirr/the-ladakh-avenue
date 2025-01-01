@@ -5,7 +5,7 @@ import HeroForm from "./hero-form";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[url('/hotel-images/tla-10.jpeg')] bg-center bg-no-repeat bg-cover w-full py-[150px] lg:h-[800px] relative -mt-20">
+    <div className="bg-[url('/hotel-images/tla-10.jpeg')] bg-center bg-no-repeat bg-cover w-full py-[150px] lg:h-[800px] relative -mt-32">
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
       <BoxedContainer className="flex items-center justify-center">
         <div className="relative w-full">

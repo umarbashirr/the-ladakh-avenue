@@ -21,8 +21,11 @@ export const routes = [
   },
   {
     label: "Our Ladakh Packages",
-    path: "https://www.ecodiscovertravel.com/our-packages/ladakh-packages",
-    target: "_blank",
+    path: "/our-packages",
+  },
+  {
+    label: "Sightseeing",
+    path: "/sightseeing",
   },
   {
     label: "Practical Information",
@@ -60,8 +63,16 @@ export const allRoutes = [
     path: "/our-hotel-amenities",
   },
   {
+    label: "Our Ladakh Packages",
+    path: "/our-packages",
+  },
+  {
     label: "Practical Information",
     path: "/practical-information",
+  },
+  {
+    label: "Sightseeing",
+    path: "/sightseeing",
   },
   {
     label: "News & Events",

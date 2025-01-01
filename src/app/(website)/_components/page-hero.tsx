@@ -18,7 +18,7 @@ const PageHero = ({
   return (
     <div
       className={cn(
-        "w-full py-[150px] relative -mt-20",
+        "w-full py-[150px] relative -mt-32",
         noMaxHeight ? "md:h-screen" : "md:h-[500px]"
       )}
       style={{

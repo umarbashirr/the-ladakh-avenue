@@ -9,7 +9,7 @@ import BoxedContainer from "./boxed-container";
 const Footer = () => {
   return (
     <Fragment>
-      <div className="py-10 md:py-16 lg:py-28 bg-[#23262D]">
+      <div className="py-10 md:py-16 lg:py-28 bg-[#000]">
         <BoxedContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="text-white">
             <h3 className="text-xl font-bold mb-8">Contacts</h3>
@@ -89,7 +89,7 @@ const Footer = () => {
           </div>
         </BoxedContainer>
       </div>
-      <div className="bg-[#1F2127] text-white font-light flex items-center justify-center p-6 tracking-wider text-sm text-center">
+      <div className="bg-[#000] border-t text-white font-light flex items-center justify-center p-6 tracking-wider text-sm text-center">
         <p>
           &copy; {new Date().getFullYear()} by The Ladakh Avenue. Powered by{" "}
           <Link

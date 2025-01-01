@@ -1,4 +1,6 @@
+import { ITravelPackage } from "@/interfaces/package.interface";
 import { newsAndEvents, rooms } from "@/lib/data";
+import { PACKAGES } from "@/lib/packages";
 import { allRoutes } from "@/lib/routes";
 import { MetadataRoute } from "next";
 
@@ -33,5 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]
   );
 
-  return [...siteMap, ...dynamicBlogs, ...dynamicRooms];
+  const packageRoutes = PACKAGES.map((pkg: ITravelPackage) => ({
+    url: `${websiteURL}/our-packages/${pkg.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.5,
+  }));
+
+  return [...siteMap, ...dynamicBlogs, ...dynamicRooms, ...packageRoutes];
 }

@@ -8,6 +8,7 @@ import Sidebar from "./sidebar";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -32,7 +33,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "relative h-20 flex items-center justify-center w-full z-50",
+        "relative h-32 flex items-center justify-center w-full z-50",
         isSticky ? "sticky top-0  left-0 bg-white border-b" : "bg-transparent"
       )}
     >
@@ -46,8 +47,14 @@ const Header = () => {
               isSticky ? "text-primary" : "text-white"
             )}
           >
-            <span className="text-xl font-bold">The Ladakh</span>
-            <span>Avenue</span>
+            {/* <span className="text-xl font-bold">The Ladakh</span>
+            <span>Avenue</span> */}
+            <Image
+              src={isSticky ? "/logo_main.svg" : "/logo_white.svg"}
+              alt="The Ladakh Avenue Logo with white variant"
+              width={isSticky ? 100 : 100}
+              height={40}
+            />
           </Link>
         </div>
         <div className="items-center justify-center gap-4 hidden lg:flex">
@@ -73,11 +80,11 @@ const Header = () => {
             Amenities
           </Link>
           <Link
-            href="https://www.ecodiscovertravel.com/our-packages/ladakh-packages"
-            target="_blank"
+            href="/our-packages"
             className={cn(
               " font-medium",
-              isSticky ? "text-[#333" : "text-white"
+              isSticky ? "text-[#333" : "text-white",
+              pathname === "/our-packages" && "underline underline-offset-8"
             )}
           >
             Our Packages
