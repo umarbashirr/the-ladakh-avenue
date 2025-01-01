@@ -1,6 +1,6 @@
 export const Site_Info = {
   title: "The Ladakh Avenue",
-  reservation_email: "hotels@ecodiscovertravel.com",
+  reservation_email: "theladakhavenue@gmail.com",
   phone: ["+91 7006853438", "+91 9797324071"],
   address: "Karzoo Leh Ladakh 194101",
 };

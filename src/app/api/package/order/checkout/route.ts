@@ -86,8 +86,8 @@ export async function POST(req: NextRequest) {
 `;
 
     await transporter.sendMail({
-      from: "The Ladakh Avenue <hotels@ecodiscovertravel.com>", // sender address
-      to: "hotels@ecodiscovertravel.com, ", // list of receivers
+      from: "The Ladakh Avenue <theladakhavenue@gmail.com>", // sender address
+      to: "theladakhavenue@gmail.com, ", // list of receivers
       subject: "Official Website | Package Booking Received", // Subject line
       html: emailTemplate,
     });

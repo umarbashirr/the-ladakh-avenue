@@ -58,8 +58,8 @@ export async function POST(req: Request) {
 
   // send mail with defined transport object
   await transporter.sendMail({
-    from: "The Ladakh Avenue <hotels@ecodiscovertravel.com>", // sender address
-    to: "hotels@ecodiscovertravel.com, ", // list of receivers
+    from: "The Ladakh Avenue <theladakhavenue@gmail.com>", // sender address
+    to: "theladakhavenue@gmail.com, ", // list of receivers
     subject: "Official Website | Support Ticket Received", // Subject line
     text: request.message, // plain text body
     html: emailTemplate,

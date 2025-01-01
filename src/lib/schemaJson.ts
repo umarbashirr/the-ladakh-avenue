@@ -45,7 +45,7 @@ export const JSONLD = {
       addressCountry: "IN",
     },
     telephone: "+91 7006853438",
-    email: "hotels@ecodiscovertravel.com",
+    email: "theladakhavenue@gmail.com",
     checkinTime: "11:00",
     checkoutTime: "10:00",
     starRating: {
